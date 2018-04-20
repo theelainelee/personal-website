@@ -2,15 +2,51 @@ import React, { Component } from 'react';
 import logo from './el_logo.png';
 import './App.css';
 import ReactPlayer from 'react-player';
+// import ReactDOM from 'react-dom';
+// import Media from 'react-media';
 
 const VIDEOSTYLE = {
   backgroundColor: 'white'
 };
 
+
+
 class App extends Component {
+
+  burgerToggle() {
+    let linksEl = document.querySelector('.narrowLinks');
+    if (linksEl.style.display === 'block') {
+      linksEl.style.display = 'none';
+    } else {
+      linksEl.style.display = 'block';
+    }
+  };
+
   render() {
     return (
       <div className="Parent">
+        <nav>
+            <div className="navWide">
+              <div className="wideDiv">
+                <a href="https://developer.mozilla.org/en-US/">Home</a>
+                <a href="https://reactjs.org/">About</a>
+                <a href="https://github.com/">Shop</a>
+              </div>
+            </div>
+          <div className="navNarrow">
+            <i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
+            <div className="narrowLinks">
+              <a href="https://developer.mozilla.org/en-US/" onClick={this.burgerToggle}>Home</a>
+              <a href="https://reactjs.org/" onClick={this.burgerToggle}>About</a>
+              <a href="https://github.com/" onClick={this.burgerToggle}>Shop</a>
+            </div>
+          </div>
+      </nav>
+
+
+
+
+      
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -27,9 +63,8 @@ class App extends Component {
         </div>
         <div className="App-video" >
           <ReactPlayer 
-            url='https://vimeo.com/243556536'
+            url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
             className='react-player'
-            playing
             controls
             width='100%'
             height='300px'
@@ -39,6 +74,7 @@ class App extends Component {
           />
         </div>
       </div>
+     
     );
   }
 }
