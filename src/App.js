@@ -25,28 +25,8 @@ class App extends Component {
   render() {
     return (
       <div className="Parent">
-        <nav>
-            <div className="navWide">
-              <div className="wideDiv">
-                <a href="https://developer.mozilla.org/en-US/">Home</a>
-                <a href="https://reactjs.org/">About</a>
-                <a href="https://github.com/">Shop</a>
-              </div>
-            </div>
-          <div className="navNarrow">
-            <i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
-            <div className="narrowLinks">
-              <a href="https://developer.mozilla.org/en-US/" onClick={this.burgerToggle}>Home</a>
-              <a href="https://reactjs.org/" onClick={this.burgerToggle}>About</a>
-              <a href="https://github.com/" onClick={this.burgerToggle}>Shop</a>
-            </div>
-          </div>
-      </nav>
+       <div className="hamburgerMenu" ></div>
 
-
-
-
-      
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
