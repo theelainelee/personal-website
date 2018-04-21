@@ -13,11 +13,12 @@ import ReactPlayer from 'react-player';
 
 class App extends Component {
 
-  hamburgerToggle() {
+  hamburgerToggle(event) {
     let hamburger = document.querySelector('.hamburger-menu');
 
       
         hamburger.addEventListener("click", function(){
+          event.preventDefault();
           console.log('CLICKED')
           // this.classList.toggle("is-active");
           if (this.classList.toggle('is-active')){
