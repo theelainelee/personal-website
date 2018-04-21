@@ -44,6 +44,14 @@
   width: 28px;
 }*/
 
+.App-logo {
+  margin-left: 44px;
+}
+
+button:focus {
+  outline:0;
+}
+
 .hamburger-menu {
   /*position: absolute;*/
   float:right;
