@@ -18,7 +18,6 @@ class App extends Component {
 
       
         hamburger.addEventListener("click", function(){
-          event.preventDefault();
           console.log('CLICKED')
           // this.classList.toggle("is-active");
           if (this.classList.toggle('is-active')){
