@@ -12,34 +12,16 @@ import ReactPlayer from 'react-player';
 
 
 class App extends Component {
-
-  hamburgerToggle(event) {
-    let hamburger = document.querySelector('.hamburger-menu');
-
-      
-        hamburger.addEventListener("click", function(){
+  
+        hamburgerToggle(event){
           console.log('CLICKED')
-          // this.classList.toggle("is-active");
-          if (this.classList.toggle('is-active')){
-            console.log("OPEN MENU SHOW X")
-            function x_openMenu(){
-              document.getElementById('hamburger--3dxy.is-active');
-            }
-          } else {
-            console.log("CLOSE MENU SHOW 3 LINES")
-            function threeLines_closeMenu(){
-              document.getElementById('hamburger--3dxy');
-            }
-          }
-        });
-      
+          event.target.classList.toggle("is-active");
   };
 
   render() {
     return (
       <div className="Parent">
        <button type="button" className="hamburger-menu hamburger--3dxy" onClick={this.hamburgerToggle}>
-
           <span className="hamburger-box" >
             <span className="hamburger-inner" ></span>
           </span>
