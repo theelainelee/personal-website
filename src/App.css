@@ -76,9 +76,11 @@
   height: 24px;
   display: inline-block;
   position: relative; 
+  pointer-events: none;
 }
 
 .hamburger-inner {
+  pointer-events: none;
   display: block;
   top: 50%;
   margin-top: -2px; }
