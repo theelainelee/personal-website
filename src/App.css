@@ -144,9 +144,10 @@
 button:focus {outline:0;}
 
 .nav-menu {
-  background-color: #fff;
+  /*background-color: #fff;*/
+  background: rgba(204, 204, 204, 0.2);
   /*overflow: hidden;*/
-  padding: 1em;
+  padding: 0.6em;
   width: 50px;
   height: 100px;
   list-style-type: none;
