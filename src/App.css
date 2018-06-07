@@ -1,48 +1,3 @@
-/*.hamburgerMenu {
-      width:30px;
-      height:15px;
-      border-radius:5px;
-      position:absolute;
-      margin-top:20px;
-}
-
-    .hamburgerMenu:after, .hamburgerMenu:before
-      {
-          content: '';
-          width: 100%;
-          height:5px;
-          background-color:#ffffff;
-          position:absolute;
-          border-radius:5px;
-      }
-
-      .hamburgerMenu:after
-      {
-          top:10px;
-      }
-
-      .hamburgerMenu:before
-      {
-          top:20px;
-      }*/
-
-
-/*.hamburgerMenu {
-  background: linear-gradient(to right, #fff, #fff) no-repeat;
-  border-radius: 1px;
-  background-position: center left;
-  background-size: 100% 4px;
-  position:absolute;
-  margin-top: 10px;
-  float:right;
-  
-
-  border: solid #fff;
-  border-width: 4px 0;
-
-  height: 15px;
-  width: 28px;
-}*/
 
 .App-logo {
   margin-left: 44px;
@@ -53,7 +8,7 @@
 }*/
 
 .hamburger-menu {
-  /*position: absolute;*/
+  
   float:right;
   padding: 15px 15px;
   display: inline-block;
@@ -68,17 +23,17 @@
   border: 0;
   margin: 0;
   overflow: visible; }
-  .hamburger:hover {
-    opacity: 0.7; }
 
 .hamburger-box {
   width: 40px;
   height: 24px;
   display: inline-block;
   position: relative; 
+  pointer-events: none;
 }
 
 .hamburger-inner {
+  pointer-events: none;
   display: block;
   top: 50%;
   margin-top: -2px; }
@@ -122,17 +77,18 @@
 }
 
 .App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
+  animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
 .App-header {
   /*box-sizing: border-box;
   display:block;*/
-  background-color: #26466D;
-  height: 170px;
+  background-image: url("abstract-art.jpg");
+ 
   padding: 20px;
   color: white;
+
 }
 
 .App-name {
@@ -180,71 +136,41 @@
 }*/
 
 
-/*@keyframes App-logo-spin {
+@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}*/
+}
 
-nav {
-  background-color: #1A1A1A;
-  overflow: hidden;
+button:focus {outline:0;}
+
+.nav-menu {
+  background-color: #fff;
+  /*overflow: hidden;*/
   padding: 1em;
+  width: 50px;
+  height: 100px;
+  list-style-type: none;
+  display: none;
+  border-radius: 15px;
+  float:right;
+  margin-top: 50px;
+  margin-right: -50px;
+  text-align:center;
+  line-height: 35px;
+ 
+}
 
-  a {
-    color: #ffffff;
-  }
+.nav-menu.is-active {
+  display: block;
+}
 
-  a:visited {
-    color: #ff0000;
-  }
-
-  border-bottom: 1px solid #000;
-
-  .navDesktop {
-    display: none;
-    margin: 0 auto;
-
-    .DesktopDiv {
-      text-align: center;
-
-      a {
-        text-decoration: none;
-        display: inline-block;
-        // Adjust padding to increase/decrease the space between links.
-        padding: 0 2em;
-      }
-    }
-  }
-
-  // Navbar is set to default with the "hamburger" and links on the left
-  // side of the screen. To move to the right of the screen, simply
-  // change the three "float: Left;" references to read "float: right;".
-  .navMobile {
-
-    i {
-      float: left;
-      cursor: pointer;
-      color: #FFF;
-
-    }
-
-    .mobileLinks {
-      display: none;
-
-      a {
-        text-decoration: none;
-        display: block;
-        float: left;
-        clear: left;
-        padding: 0.5em 0;
-      }
-    }
-  }
+li {
+  pointer-events: none;
 }
 
 /*@media only screen and (min-width: 480px) {*/
   
-  nav {
+  /*nav {
 
     .navWide {
       display: block;
@@ -253,5 +179,5 @@ nav {
     .navNarrow {
       display: none;
     }
-  }
+  }*/
 /*}*/

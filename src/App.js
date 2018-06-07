@@ -12,33 +12,50 @@ import ReactPlayer from 'react-player';
 
 
 class App extends Component {
-  
-        hamburgerToggle(event){
-          console.log('CLICKED')
-          event.target.classList.toggle("is-active");
-  };
+
+        hamburgerToggle(event){  
+          event.target.classList.toggle("is-active")
+
+          let openMenu = document.querySelector(".nav-menu");
+            if (openMenu.style.display === "block") {
+                openMenu.style.display = "none";
+            } else {
+                openMenu.style.display = "block";
+            }
+        }
+
+        // animatePage()
+
 
   render() {
     return (
       <div className="Parent">
-       <button type="button" className="hamburger-menu hamburger--3dxy" onClick={this.hamburgerToggle}>
-          <span className="hamburger-box" >
+      
+       <button type="button" className="hamburger-menu hamburger--3dxy" onClick= {this.hamburgerToggle}>
+             <span className="hamburger-box" >
             <span className="hamburger-inner" ></span>
-          </span>
+            </span>
+            
        </button>
+       <nav className="nav-menu" onClick={this.hamburgerToggle}>
+               <li>home</li>
+               <li>about</li>
+               <li>portfolio</li>
+             </nav>
+       
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-name">Elaine Lee </h1>
 
              <p className="App-title">
-            Developer and Designer
+            Developer. Engineer.
             </p>
           </header>
           <div>      </div>
-          <p className="App-contact">
-            Start a Project
-          </p>
+          <button className="App-contact" onClick={this.animatePage}>
+            Click Here
+          </button>
         </div>
         <div className="App-video" >
           <ReactPlayer 
