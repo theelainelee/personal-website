@@ -82,6 +82,8 @@
 }
 
 .App-header {
+  z-index: -10;
+  position: relative;
   /*box-sizing: border-box;
   display:block;*/
   background-image: url("abstract-art.jpg");
@@ -144,6 +146,9 @@
 button:focus {outline:0;}
 
 .nav-menu {
+  z-index: 10;
+  position: absolute;
+  right: 0;
   /*background-color: #fff;*/
   background: rgba(204, 204, 204, 0.2);
   /*overflow: hidden;*/
@@ -155,7 +160,7 @@ button:focus {outline:0;}
   border-radius: 15px;
   float:right;
   margin-top: 50px;
-  margin-right: -50px;
+  /*margin-right: -50px;*/
   text-align:center;
   line-height: 35px;
  
