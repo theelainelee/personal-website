@@ -59,6 +59,7 @@ class App extends Component {
         </div>
         <div className="App-video" >
           <ReactPlayer 
+            playing
             url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
             className='react-player'
             controls
