@@ -51,10 +51,10 @@ class App extends Component {
              params={{
                   "particles": {
                   "number": {
-                    "value": 100,
+                    "value": 60,
                     "density": {
                       "enable": true,
-                      "value_area": 600
+                      "value_area": 700
                     }
                   },
                   "color": {
