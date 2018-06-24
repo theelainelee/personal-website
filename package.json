@@ -8,6 +8,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-media": "^1.8.0",
+    "react-particles-js": "^2.2.0",
     "react-player": "^1.4.0",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
