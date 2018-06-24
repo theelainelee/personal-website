@@ -54,7 +54,7 @@ class App extends Component {
                     "value": 60,
                     "density": {
                       "enable": true,
-                      "value_area": 700
+                      "value_area": 800
                     }
                   },
                   "color": {
@@ -76,12 +76,12 @@ class App extends Component {
                     }
                   },
                   "opacity": {
-                    "value": 0.5,
+                    "value": 0.9,
                     "random": false,
                     "anim": {
                       "enable": true,
                       "speed": 2,
-                      "opacity_min": 0.1,
+                      "opacity_min": 0.9,
                       "sync": true
                     }
                   },
@@ -90,7 +90,7 @@ class App extends Component {
                     "random": true,
                     "anim": {
                       "enable": false,
-                      "speed": 30,
+                      "speed": 60,
                       "size_min": 0.1,
                       "sync": false
                     }
@@ -99,12 +99,12 @@ class App extends Component {
                     "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
-                    "opacity": 0.5,
+                    "opacity": 0.9,
                     "width": 1
                   },
                   "move": {
                     "enable": true,
-                    "speed": 6,
+                    "speed": 2,
                     "direction": "none",
                     "random": false,
                     "straight": false,
@@ -118,7 +118,7 @@ class App extends Component {
                   }
                 },
                 "interactivity": {
-                  "detect_on": "canvas",
+                  "detect_on": "window",
                   "events": {
                     "onhover": {
                       "enable": true,
