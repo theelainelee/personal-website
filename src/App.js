@@ -54,7 +54,7 @@ class App extends Component {
                     "value": 60,
                     "density": {
                       "enable": true,
-                      "value_area": 800
+                      "value_area": 300
                     }
                   },
                   "color": {
@@ -67,7 +67,7 @@ class App extends Component {
                       "color": "#000000"
                     },
                     "polygon": {
-                      "nb_sides": 5
+                      "nb_sides": 6
                     },
                     "image": {
                       "src": "img/github.svg",
@@ -76,17 +76,17 @@ class App extends Component {
                     }
                   },
                   "opacity": {
-                    "value": 0.9,
-                    "random": false,
+                    "value": 0.4,
+                    "random": true,
                     "anim": {
                       "enable": true,
-                      "speed": 2,
-                      "opacity_min": 0.9,
+                      "speed": 0.1,
+                      "opacity_min": 0.1,
                       "sync": true
                     }
                   },
                   "size": {
-                    "value": 3,
+                    "value": 15,
                     "random": true,
                     "anim": {
                       "enable": false,
@@ -96,17 +96,17 @@ class App extends Component {
                     }
                   },
                   "line_linked": {
-                    "enable": true,
+                    "enable": false,
                     "distance": 150,
                     "color": "#ffffff",
-                    "opacity": 0.9,
+                    "opacity": 0.6,
                     "width": 1
                   },
                   "move": {
                     "enable": true,
                     "speed": 2,
                     "direction": "none",
-                    "random": false,
+                    "random": true,
                     "straight": false,
                     "out_mode": "out",
                     "bounce": false,
@@ -122,7 +122,7 @@ class App extends Component {
                   "events": {
                     "onhover": {
                       "enable": true,
-                      "mode": "grab"
+                      "mode": "rgrab"
                     },
                     "onclick": {
                       "enable": true,
