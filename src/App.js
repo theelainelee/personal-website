@@ -96,7 +96,7 @@ class App extends Component {
                     }
                   },
                   "line_linked": {
-                    "enable": false,
+                    "enable": true,
                     "distance": 150,
                     "color": "#ffffff",
                     "opacity": 0.6,
@@ -122,7 +122,7 @@ class App extends Component {
                   "events": {
                     "onhover": {
                       "enable": true,
-                      "mode": "rgrab"
+                      "mode": "grab"
                     },
                     "onclick": {
                       "enable": true,
