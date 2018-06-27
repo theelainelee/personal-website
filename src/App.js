@@ -51,10 +51,10 @@ class App extends Component {
              params={{
                   "particles": {
                   "number": {
-                    "value": 60,
+                    "value": 40,
                     "density": {
                       "enable": true,
-                      "value_area": 300
+                      "value_area": 500
                     }
                   },
                   "color": {
@@ -67,7 +67,7 @@ class App extends Component {
                       "color": "#000000"
                     },
                     "polygon": {
-                      "nb_sides": 6
+                      "nb_sides": 5
                     },
                     "image": {
                       "src": "img/github.svg",
@@ -86,7 +86,7 @@ class App extends Component {
                     }
                   },
                   "size": {
-                    "value": 15,
+                    "value": 10,
                     "random": true,
                     "anim": {
                       "enable": false,
