@@ -145,19 +145,19 @@ h1, p{
   margin: 0 auto;
   margin-top: 20px;
 
-}
+}*/
 
 .App-video {
-  padding-left: 17px;
+  /*padding-left: 17px;
   padding-right: 17px;
-  margin-top: 30px;
- }*/
-/*.react-player {
-  position: absolute;
+  margin-top: 30px;*/
+ }
+.react-player {
+ /* position: relative;
   top: 0;
   left: 0;
-  background-color: 'red';
-}*/
+  background-color: 'red';*/
+}
 
 
 /*@keyframes App-logo-spin {
