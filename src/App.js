@@ -3,6 +3,8 @@ import logo from './el_logo.png';
 import './App.css';
 import ReactPlayer from 'react-player';
 import Particles from 'react-particles-js'
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { Parallax } from 'react-scroll-parallax';
 // import ReactDOM from 'react-dom';
 // import Media from 'react-media';
 
@@ -28,9 +30,14 @@ class App extends Component {
         // animatePage()
 
 
+
   render() {
     return (
+      <ParallaxProvider>
+
       <div className="Parent">
+
+
       
        <button type="button" className="hamburger-menu hamburger--3dxy" onClick= {this.hamburgerToggle}>
              <span className="hamburger-box" >
@@ -45,8 +52,13 @@ class App extends Component {
              </nav>
        
         <div className="App">
+        <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+        {/*<img src={logo} />*/}
+        <h1>ELAINE LEE</h1>
+        <p>Front-End Developer and Engineer.</p>
+      </Parallax>
        
-          <header className="App-header">
+          {/*<header className="App-header">*/}
             <Particles className="particles-js" 
              params={{
                   "particles": {
@@ -71,8 +83,8 @@ class App extends Component {
                     },
                     "image": {
                       "src": "img/github.svg",
-                      "width": 100,
-                      "height": 100
+                      "width": 10,
+                      "height": 10
                     }
                   },
                   "opacity": {
@@ -86,7 +98,7 @@ class App extends Component {
                     }
                   },
                   "size": {
-                    "value": 10,
+                    "value": 3,
                     "random": true,
                     "anim": {
                       "enable": false,
@@ -98,7 +110,7 @@ class App extends Component {
                   "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#ffffff",
+                    "color": "#0000ff",
                     "opacity": 0.6,
                     "width": 1
                   },
@@ -139,7 +151,7 @@ class App extends Component {
                     },
                     "bubble": {
                       "distance": 200,
-                      "size": 40,
+                      "size": 10,
                       "duration": 2,
                       "opacity": 8,
                       "speed": 3
@@ -159,20 +171,18 @@ class App extends Component {
                 "retina_detect": true
               }}
             />
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-name">Elaine Lee </h1>
-
-             <p className="App-title">
-            Developer. Engineer.
-            </p>
+           
+);
+            {/*<img src={logo} className="App-logo" alt="logo" />*/}
+           
             
-          </header>
+          {/*</header>*/}
           <div>      </div>
-          <button className="App-contact" onClick={this.animatePage}>
+          {/*<button className="App-contact" onClick={this.animatePage}>
             Click Here
-          </button>
+          </button>*/}
         </div>
-        <div className="App-video" >
+      {/*  <div className="App-video" >
           <ReactPlayer 
             playing
             url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
@@ -184,8 +194,10 @@ class App extends Component {
 
 
           />
-        </div>
+        </div>*/}
       </div>
+
+      </ParallaxProvider>
      
     );
   }
