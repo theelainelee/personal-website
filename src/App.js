@@ -52,7 +52,7 @@ class App extends Component {
              </nav>
        
         <div className="App">
-        <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+        <Parallax className="name-title" y={[-20, 20]} tagOuter="figure">
         {/*<img src={logo} />*/}
         <h1>ELAINE LEE</h1>
         <p>Front-End Developer and Engineer.</p>

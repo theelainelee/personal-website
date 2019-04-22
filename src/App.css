@@ -22,6 +22,9 @@ body {
 h1, p{
   color:white;
 }
+.name-title{
+  width: 50vw;
+}
 
 .hamburger-menu {
   
