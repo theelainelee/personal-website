@@ -22,6 +22,10 @@ body {
 h1, p{
   color:white;
 }
+
+*:focus {
+    outline: 0;
+}
 .name-title{
   width: 50vw;
   /*position:fixed;*/
@@ -231,6 +235,8 @@ canvas {
   /*background: transparent;
   color: "#3CA9D1";*/
 }
+
+
 
 @media only screen and (max-width: 600px){
   .job-title{
