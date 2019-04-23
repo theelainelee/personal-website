@@ -65,52 +65,52 @@ class App extends Component {
       <section>
 
         <h1>Work 1</h1>
-         <Portfolio imgPath='abstract-art.jpg' onClick={() => window.open('https://google.com', '_blank')} title='React Website' text='long scroll website built with React, React Router'/>
+         <Portfolio  onClick={() => window.open('https://google.com', '_blank')} title='React Website' text='long scroll website built with React, React Router'/>
         </section>
          <section>
 
           <h1>Work 2</h1>
-      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
         </section>
          <section>
 
    
           <h1>Work 3</h1>
-      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
     
         </section>
           <section>
 
           <h1>Work 4</h1>
-      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
 
         </section>
         <section>
 
  
           <h1>Work 5</h1>
-      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
          
         </section>
          <section>
 
  
           <h1>Work 6</h1>
-      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
         
         </section>  
         <section>
 
  
           <h1>Work 7</h1>
-      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
         
         </section>  
         <section>
 
  
           <h1>Work 8</h1>
-      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
         
         </section>
         
