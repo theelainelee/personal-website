@@ -8,9 +8,7 @@ import { Parallax } from 'react-scroll-parallax';
 // import ReactDOM from 'react-dom';
 // import Media from 'react-media';
 
-// const VIDEOSTYLE = {
-//   backgroundColor: 'white'
-// };
+
 
 
 
@@ -35,6 +33,7 @@ class App extends Component {
 
       <div className="App">
 
+      <header>
        <button type="button" className="hamburger-menu hamburger--3dxy" onClick= {this.hamburgerToggle}>
              <span className="hamburger-box" >
             <span className="hamburger-inner" ></span>
@@ -45,37 +44,74 @@ class App extends Component {
                <li>home</li>
                <li>about</li>
                <li>portfolio</li>
+               <li>contact</li>
              </nav>
        
-      
-        <Parallax className="name-title" y={[-20, 20]} tagOuter="figure">
-      
+       
+        {/*<Parallax className="name-title" y={[-20, 20]} tagOuter="figure">*/}
+        <div className='header__info__container'>
         <h1>ELAINE LEE</h1>
-        <p>Front-End Developer and Engineer.</p>
-      </Parallax>
-        {/*<div className="App-video" >
+        <p className='job-title'>Front-End Developer and Engineer.</p>
+
+        </div>
+      {/*</Parallax>*/}
+       
+        </header> 
+           
+<ParticlesContainer/>
+           
+          {/*<div>      
+          </div>*/}
+      
+    
+  {/* <section>
+
+   <Parallax className="name-title"  >
           <ReactPlayer 
             playing
             url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
             className='react-player'
             controls
-            width='100%'
+          
+            height='300px'
+          
+
+
+          />
+       
+         </Parallax>
+        </section>*/}
+       {/* <section>
+         <Parallax className="name-title" >
+       <ReactPlayer 
+            playing
+            url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
+            className='react-player'
+            controls
+          
             height='300px'
             // style={VIDEOSTYLE}
 
 
           />
-        </div>*/}
-          <ParticlesContainer/>
-           
-);
-           
-          <div>      
-          </div>
-      
-    
-      </div>
+      </Parallax>
+      </section>*/}
+     {/* <section>
+         <Parallax className="name-title" >
+       <ReactPlayer 
+            playing
+            url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
+            className='react-player'
+            controls
+          
+            height='300px'
+            // style={VIDEOSTYLE}
 
+
+          />
+      </Parallax>
+      </section>*/}
+           </div>
       </ParallaxProvider>
      
     );

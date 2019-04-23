@@ -24,12 +24,13 @@ h1, p{
 }
 .name-title{
   width: 50vw;
+  /*position:fixed;*/
 }
 
 .hamburger-menu {
   
   float:right;
-  padding: 15px 15px;
+  padding: 35px 40px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -151,12 +152,14 @@ h1, p{
   /*padding-left: 17px;
   padding-right: 17px;
   margin-top: 30px;*/
+  /*position:relative;*/
+  
  }
 .react-player {
- /* position: relative;
+  /*position: absolute;*/
   top: 0;
   left: 0;
-  background-color: 'red';*/
+  background-color: 'red';
 }
 
 
@@ -176,7 +179,7 @@ button:focus {outline:0;}*/
   /*overflow: hidden;*/
   padding: 0.6em;
   width: 50px;
-  height: 100px;
+  height: 140px;
   list-style-type: none;
   display: none;
   border-radius: 15px;
@@ -197,14 +200,49 @@ li {
   color: white;
 }
 
-/*.particles-js {
-  position: absolute;
+.header__info__container{
+  
+  padding: 10px 40px;
+  background: rgba(0,0,0, 0.5);
+  line-height: 0.5
+}
+
+header{
+  position:fixed;
   width: 100%;
-  height: 100%;
-  background: transparent;
-  color: "#3CA9D1";
-}*/
-/*@media only screen and (min-width: 480px) {*/
+}
+
+canvas {
+    display:block;
+    background: transparent;
+    position: fixed;
+    z-index: -1;
+    width: 84% !important;
+}
+
+.particles-js {
+  position: absolute;
+    width: 84%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0.48;
+  /*background: transparent;
+  color: "#3CA9D1";*/
+}
+
+@media only screen and (max-width: 600px){
+  .job-title{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* iPhone, Android rules here */
+  .job-title{
+    font-size: 12px !important
+  }
   
   /*nav {
 
@@ -216,4 +254,4 @@ li {
       display: none;
     }
   }*/
-/*}*/
+}
