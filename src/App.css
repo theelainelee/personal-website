@@ -8,16 +8,17 @@
 }*/
 
 body {
-  background-image: url("electromagnetic_spectrum.jpg");
- /* background-color:white;*/
-  background-repeat:no-repeat;
+  background: url("assets/electromagnetic_spectrum.jpg") no-repeat center center fixed;
+  background-color:black;
   background-size:cover;
-  background-position:center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden
+  /*overflow: hidden*/
 }
 h1, p{
   color:white;
@@ -29,6 +30,13 @@ h1, p{
 .name-title{
   width: 50vw;
   /*position:fixed;*/
+}
+
+#portfolio-flex-container{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 150px 50px;
 }
 
 .hamburger-menu {
@@ -153,34 +161,27 @@ h1, p{
 }*/
 
 .App-video {
-  /*padding-left: 17px;
+  padding-left: 17px;
   padding-right: 17px;
-  margin-top: 30px;*/
+  margin-top: 30px;
   /*position:relative;*/
   
  }
 .react-player {
-  /*position: absolute;*/
+  margin: 0 auto;
   top: 0;
   left: 0;
   background-color: 'red';
 }
 
 
-/*@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-button:focus {outline:0;}*/
-
 .nav-menu {
   z-index: 10;
   position: absolute;
   right: 0;
-  /*background-color: #fff;*/
+  
   background: rgba(204, 204, 204, 0.2);
-  /*overflow: hidden;*/
+ 
   padding: 0.6em;
   width: 50px;
   height: 140px;
@@ -189,7 +190,6 @@ button:focus {outline:0;}*/
   border-radius: 15px;
   float:right;
   margin-top: 50px;
-  /*margin-right: -50px;*/
   text-align:center;
   line-height: 35px;
  
@@ -207,31 +207,40 @@ li {
 .header__info__container{
   
   padding: 10px 40px;
-  background: rgba(0,0,0, 0.5);
+  background: rgba(0,0,0, 1);
   line-height: 0.5
 }
 
 header{
   position:fixed;
   width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+section {
+  background-color: rgba(211,211,211,0.1);
+  border-radius: 5px;
+  margin: 10px;
 }
 
 canvas {
     display:block;
     background: transparent;
     position: fixed;
-    z-index: -1;
-    width: 84% !important;
+    z-index: -100;
+    width: 100%;
 }
 
 .particles-js {
   position: absolute;
-    width: 84%;
+    width: 100%;
     height: 100vh;
+    padding-top: 100px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    opacity: 0.48;
+    opacity: 0.7;
+    z-index: -100;
   /*background: transparent;
   color: "#3CA9D1";*/
 }
@@ -248,6 +257,9 @@ canvas {
   /* iPhone, Android rules here */
   .job-title{
     font-size: 12px !important
+  }
+  canvas, .particles-js{
+    width: 80%;
   }
   
   /*nav {

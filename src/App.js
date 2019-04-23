@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 import './App.css';
 import ReactPlayer from 'react-player';
-import ParticlesContainer from './Particles'
+import video from './assets/ElaineLee_Portfolio_aminated_works.mov'
+import ParticlesContainer from './components/Particles'
+import Portfolio from './components/Portfolio'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
 // import ReactDOM from 'react-dom';
@@ -48,70 +50,84 @@ class App extends Component {
              </nav>
        
        
-        {/*<Parallax className="name-title" y={[-20, 20]} tagOuter="figure">*/}
         <div className='header__info__container'>
         <h1>ELAINE LEE</h1>
         <p className='job-title'>Front-End Developer and Engineer.</p>
 
         </div>
-      {/*</Parallax>*/}
        
         </header> 
            
-<ParticlesContainer/>
+    <ParticlesContainer/>
            
-          {/*<div>      
-          </div>*/}
-      
-    
-  {/* <section>
-
-   <Parallax className="name-title"  >
-          <ReactPlayer 
-            playing
-            url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
-            className='react-player'
-            controls
-          
-            height='300px'
-          
-
-
-          />
        
-         </Parallax>
-        </section>*/}
-       {/* <section>
-         <Parallax className="name-title" >
+     <div id='portfolio-flex-container'> 
+      <section>
+
+        <h1>Work 1</h1>
+         <Portfolio imgPath='abstract-art.jpg' onClick={() => window.open('https://google.com', '_blank')} title='React Website' text='long scroll website built with React, React Router'/>
+        </section>
+         <section>
+
+          <h1>Work 2</h1>
+      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+        </section>
+         <section>
+
+   
+          <h1>Work 3</h1>
+      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+    
+        </section>
+          <section>
+
+          <h1>Work 4</h1>
+      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+
+        </section>
+        <section>
+
+ 
+          <h1>Work 5</h1>
+      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+         
+        </section>
+         <section>
+
+ 
+          <h1>Work 6</h1>
+      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+        
+        </section>  
+        <section>
+
+ 
+          <h1>Work 7</h1>
+      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+        
+        </section>  
+        <section>
+
+ 
+          <h1>Work 8</h1>
+      <Portfolio imgPath='abstract-art.jpg' title='React Website' text='long scroll website built with React, React Router'/>
+        
+        </section>
+        
+        </div>
+        <div>
+        
        <ReactPlayer 
             playing
-            url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
+            url={video}
             className='react-player'
             controls
-          
             height='300px'
-            // style={VIDEOSTYLE}
-
-
           />
-      </Parallax>
-      </section>*/}
-     {/* <section>
-         <Parallax className="name-title" >
-       <ReactPlayer 
-            playing
-            url='https://www.youtube.com/watch?v=XQu8TTBmGhA'
-            className='react-player'
-            controls
-          
-            height='300px'
-            // style={VIDEOSTYLE}
-
-
-          />
-      </Parallax>
-      </section>*/}
-           </div>
+      
+      </div>
+     
+     </div>
       </ParallaxProvider>
      
     );
