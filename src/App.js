@@ -115,8 +115,8 @@ class App extends Component {
         </section>
         
         </div>
-        <div>
-        
+        <div id='portfolio-video-container'>
+        <h3 className='text-portfolio-video'>This is a video compilation of some ad agency work I have done with banner HTML ads for clients such as Disney, Lego, Nike, Pixar. The technologies used are Javascript and Greensock for animating.</h3>
        <ReactPlayer 
             playing
             url={video}

@@ -36,7 +36,7 @@ h1, p{
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 150px 50px;
+  padding: 150px 50px 50px 50px;
 }
 
 .hamburger-menu {
@@ -159,22 +159,27 @@ h1, p{
   margin-top: 20px;
 
 }*/
+#portfolio-video-container{
+  display: flex;
+  flex-flow: row wrap;
+  padding:  0 300px;
+  /*width: 100%;*/
+}
 
-/*.App-video {
-  padding-left: 17px;
-  padding-right: 17px;
-  margin-top: 30px;
-  /*position:relative;*/
-  
- /*}*/*/
+.text-portfolio-video{
+ float: left;
+ width: 50%;
+}
  video{
   /*width: 640px !important;
   height: 300px !important;
   margin: 0 auto;*/
  }
 .react-player {
+  /*margin: 0 auto;
+  text-align:center;*/
+  width: 50%;
   margin: 0 auto;
-  text-align:center;
 
  /* top: 0;
   left: 0;
@@ -253,14 +258,22 @@ canvas {
 }
 
 
-
+@media only screen and (max-width: 1000px){
+  #portfolio-video-container{
+    padding: 0 100px;
+  }
+   .text-portfolio-video{
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 600px){
   .job-title{
     font-size: 12px;
   }
-  /*video{
-    width: 100vw;
-  }*/
+  #portfolio-video-container{
+    padding: 0 50px;
+  }
+
 }
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {
