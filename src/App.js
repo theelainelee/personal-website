@@ -164,7 +164,7 @@ class App extends Component {
        As always in my desire to keep up-to-date with modern technology, I have been using ReactJS for the past 2 years building both production sites as well as personal projects.  
        I was also able to explore using a lower K weight version of React, called Preact.  The best way to continue growing and to solidify knowledge is to teach.  
        I was a part-time evening teaching assistant at UCLA for their programming course. 
-       This is me in a nutshell. <br/> Pleasure to have you in my world! 
+       This is me in a nutshell. <br/> Pleasure to have you visit my world! 
        </h3>
        </div>
      </div>
