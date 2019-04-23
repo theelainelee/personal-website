@@ -169,6 +169,9 @@ h1, p{
 .text-portfolio-video{
  float: left;
  width: 50%;
+ color:white;
+ padding-top: 10px;
+ text-align:left;
 }
  video{
   /*width: 640px !important;
