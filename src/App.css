@@ -167,7 +167,13 @@ h1, p{
   display: flex;
   flex-flow: row wrap;
   padding:  0 300px;
-  /*width: 100%;*/
+  
+}
+
+#about-container{
+  padding:  0 300px;
+  color: white;
+  line-height: 1.3;
 }
 
 .text-portfolio-video{
@@ -176,6 +182,7 @@ h1, p{
  color:white;
  padding-top: 10px;
  text-align:left;
+ line-height: 1.3;
 }
  
 .react-player {
@@ -197,6 +204,7 @@ h1, p{
   display: none;
   text-align:center;
   line-height: 2;
+
  
 }
 
@@ -205,7 +213,7 @@ h1, p{
 }
 
 li {
-  pointer-events: none;
+  cursor:pointer;
   color: white;
 }
 
@@ -252,18 +260,19 @@ canvas {
 
 
 @media only screen and (max-width: 1400px){
-  #portfolio-video-container{
+  #portfolio-video-container, #about-container{
     padding: 0 100px;
   }
    .text-portfolio-video{
     width: 100%;
   }
+ 
 }
 @media only screen and (max-width: 600px){
   .job-title{
     font-size: 12px;
   }
-  #portfolio-video-container{
+  #portfolio-video-container, #about-container{
     padding: 0 50px;
   }
 
