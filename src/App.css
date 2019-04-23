@@ -160,18 +160,25 @@ h1, p{
 
 }*/
 
-.App-video {
+/*.App-video {
   padding-left: 17px;
   padding-right: 17px;
   margin-top: 30px;
   /*position:relative;*/
   
+ /*}*/*/
+ video{
+  /*width: 640px !important;
+  height: 300px !important;
+  margin: 0 auto;*/
  }
 .react-player {
   margin: 0 auto;
-  top: 0;
+  text-align:center;
+
+ /* top: 0;
   left: 0;
-  background-color: 'red';
+  background-color: 'red';*/
 }
 
 
@@ -251,6 +258,25 @@ canvas {
   .job-title{
     font-size: 12px;
   }
+  /*video{
+    width: 100vw;
+  }*/
+}
+
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+  /* rules for iPad in landscape orientation */
+ /* #portfolio-flex-container{
+    width: 50vw;
+  }*/
+  
+}
+
+@media only screen and (device-width: 1024px) and (orientation: portrait) {
+  /* rules for iPad in portrait orientation */
+  /* #portfolio-flex-container{
+    width: 50vw;
+  }*/
+  
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -258,9 +284,12 @@ canvas {
   .job-title{
     font-size: 12px !important
   }
-  canvas, .particles-js{
+ /* canvas, .particles-js{
     width: 80%;
-  }
+  }*/
+ /* #portfolio-flex-container{
+    width: 76vw;
+  }*/
   
   /*nav {
 

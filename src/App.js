@@ -122,7 +122,8 @@ class App extends Component {
             url={video}
             className='react-player'
             controls
-            height='300px'
+            width='400px'
+            height='400px'
           />
       
       </div>
