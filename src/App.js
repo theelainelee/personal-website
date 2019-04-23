@@ -42,7 +42,7 @@ class App extends Component {
             </span>
             
        </button>
-       <nav className="nav-menu" onClick={this.hamburgerToggle}>
+       <nav className="nav-menu" >
                <li>home</li>
                <li>about</li>
                <li>portfolio</li>

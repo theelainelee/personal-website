@@ -32,6 +32,8 @@ h1, p{
   /*position:fixed;*/
 }
 
+
+
 #portfolio-flex-container{
   display:flex;
   flex-flow: row wrap;
@@ -40,7 +42,7 @@ h1, p{
 }
 
 .hamburger-menu {
-  
+  z-index: 1000;
   float:right;
   padding: 35px 40px;
   display: inline-block;
@@ -57,6 +59,7 @@ h1, p{
   overflow: visible; }
 
 .hamburger-box {
+  z-index: 1000;
   width: 40px;
   height: 24px;
   display: inline-block;
@@ -65,6 +68,7 @@ h1, p{
 }
 
 .hamburger-inner {
+  z-index: 1000;
   pointer-events: none;
   display: block;
   top: 50%;
@@ -173,40 +177,26 @@ h1, p{
  padding-top: 10px;
  text-align:left;
 }
- video{
-  /*width: 640px !important;
-  height: 300px !important;
-  margin: 0 auto;*/
- }
+ 
 .react-player {
-  /*margin: 0 auto;
-  text-align:center;*/
   width: 50%;
   margin: 0 auto;
-
- /* top: 0;
-  left: 0;
-  background-color: 'red';*/
+  z-index: -10;
 }
 
 
 .nav-menu {
-  z-index: 10;
+  z-index: -10;
   position: absolute;
-  right: 0;
-  
-  background: rgba(204, 204, 204, 0.2);
- 
-  padding: 0.6em;
-  width: 50px;
-  height: 140px;
+  padding-top: 200px;
+  background: rgba(0, 0, 0, 1);
+  font-size: 40px;
+  width: 100%;
+  height: 100vh;
   list-style-type: none;
   display: none;
-  border-radius: 15px;
-  float:right;
-  margin-top: 50px;
   text-align:center;
-  line-height: 35px;
+  line-height: 2;
  
 }
 
@@ -230,7 +220,7 @@ header{
   position:fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  
 }
 section {
   background-color: rgba(211,211,211,0.1);
@@ -261,7 +251,7 @@ canvas {
 }
 
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1400px){
   #portfolio-video-container{
     padding: 0 100px;
   }
