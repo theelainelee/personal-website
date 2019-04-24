@@ -22,6 +22,8 @@ class App extends Component {
           let openMenu = document.querySelector(".nav-menu");
             if (openMenu.style.display === "block") {
                 openMenu.style.display = "none";
+                 document.documentElement.style.overflow = 'scroll';
+    document.body.scroll = "yes";
             } else {
                 openMenu.style.display = "block";
                 document.documentElement.style.overflow = 'hidden';
