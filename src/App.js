@@ -64,7 +64,7 @@ class App extends Component {
 
   render() {
     const {width} = this.state;
-    const isMobile = width < 700;
+    const isMobile = width < 600;
     return (
       <ParallaxProvider>
 
