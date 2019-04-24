@@ -100,12 +100,12 @@ class App extends Component {
 
       <section className='work-1'>
       {isMobile ? 
-        <div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
          <br/><br/>
          <p>Click to view page</p>
-         </div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
          <br/><br/>

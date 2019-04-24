@@ -294,6 +294,7 @@ section:hover .overlay{
   #portfolio-video-container, #about-container{
     padding: 20px 50px;
   }
+
  
 
 }
@@ -314,6 +315,10 @@ section:hover .overlay{
   /* iPhone, Android rules here */
   .job-title{
     font-size: 12px !important
+  }
+
+  section {
+    height: 200px;
   }
 
 }
