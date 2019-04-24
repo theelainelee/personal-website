@@ -40,10 +40,11 @@ class App extends Component {
     console.log('HIDE OVERLAY')
     let openMenu = document.querySelector(".nav-menu");
     openMenu.style.display = "none";
-    window.scrollTo({
-      top: window.innerHeight - 200,
-      behavior: 'smooth'
-    });
+    // window.scrollTo({
+    //   top: window.innerHeight - 200,
+    //   behavior: 'smooth'
+    // }); 
+    window.scrollTo(0, document.body.scrollHeight);
     document.documentElement.style.overflow = 'scroll';
     document.body.scroll = "yes";
   }
