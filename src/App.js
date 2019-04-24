@@ -109,55 +109,141 @@ class App extends Component {
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
          <br/><br/>
-         <p>Click to view page</p>
+         <p>Click to view website</p>
          </div> }
         </section>
          <section className='work-2'>
 
-          <h1>Work 2</h1>
-      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
+          {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://prod.wearered.com', '_blank')}>
+        <h1>Production Website</h1>
+         <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://prod.wearered.com', '_blank')}>
+        <h1>Production Website</h1>
+         <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
+         <br/><br/>
+         <p>Click to view website</p>
+         </div> }
         </section>
          <section className='work-3'>
-
-   
-          <h1>Work 3</h1>
-      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
+           {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
+        <h1>Production Feature</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass, Media Queries, Mobile Responsive'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
+        <h1>Production Feature</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
+         <br/><br/>
+         <p>Click to view CodePen</p>
+         </div> }
     
         </section>
           <section className='work-4'>
 
-          <h1>Work 4</h1>
-      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
+           {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} >
+        <h1>Production Product Page</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass, Media Queries, Mobile Responsive, Git'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} >
+        <h1>Production Product Page</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass, Media Queries, Mobile Responsive, Git, hosted on CodePen, also viewable on Beachbody website'}/>
+         <br/><br/>
+         <p><a href='https://codepen.io/elaineleeworld/pen/pPjewO' target='_blank'>Click to view CodePen</a></p>
+         <p style={{zIndex: '10000'}}><a href='https://www.beachbody.com/product/fitness_programs/3-week-yoga-retreat-beginners-dvds.do' target='_blank'>Click to view Beachbody page</a></p>
+         </div> }
 
         </section>
         <section className='work-5'>
 
  
-          <h1>Work 5</h1>
-      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
+         {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/jBoEyw', '_blank')}>
+        <h1>Mobile Alarm Clocke</h1>
+         <Portfolio   title={'Built for:\nInterview Project'} text={'Technologies used:\n Vanilla Javascript, HTML5, CSS3, hosted on CodePen'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/jBoEyw', '_blank')}>
+        <h1>Mobile Alarm Clock</h1>
+         <Portfolio   title={'Built for:\nInterview Project'} text={'Technologies used:\n Vanilla Javascript, HTML5, CSS3, hosted on CodePen'}/>
+         <br/><br/>
+         <p>Click to view CodePen</p>
+         </div> }
          
         </section>
          <section className='work-6'>
 
  
-          <h1>Work 6</h1>
-      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
+          {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/RVRGrO', '_blank')}>
+        <h1>Production Feature</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/RVRGrO', '_blank')}>
+        <h1>Production Feature</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
+         <br/><br/>
+         <p>Click to view CodePen</p>
+         </div> }
         
         </section>  
         <section className='work-7'>
 
  
-          <h1>Work 7</h1>
-      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
+          {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qryjGx', '_blank')}>
+        <h1>Sticky Notes</h1>
+         <Portfolio   title={'Built for:\nInterview Question'} text={'Technologies used:\nJavascript, jQuery, Sass'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qryjGx', '_blank')}>
+        <h1>Sticky Notes</h1>
+         <Portfolio   title={'Built for:\nInterview Question'} text={'Technologies used:\nJavascript, jQuery, HTML5, CSS3'}/>
+         <br/><br/>
+         <p>Click to view CodePen</p>
+         </div> }
         
         </section>  
         <section className='work-8'>
 
  
-          <h1>Work 8</h1>
-      <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
+         {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('www.elainelee.world', '_blank')}>
+        <h1>Personal Website</h1>
+         <Portfolio   title={'Built for:\nPublic, Freelance Work, Interviewers, Recruiters'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
+         <br/><br/>
+         <p>Click to view website</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('www.elainelee.world', '_blank')}>
+        <h1>Personal Website</h1>
+         <Portfolio   title={'Built for:\nPublic, Freelance Work, Interviewers, Recruiters'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
+         <br/><br/>
+         <p>Click to view website</p>
+         </div> }
         
-        </section>
+        </section> 
+        {/*<section className='work-9'>
+
+ 
+         {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
+        <h1>Production Website</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
+        <h1>Production Website</h1>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div> }
+        
+        </section>*/}
         
         </div>
         <div id='portfolio-video-container'>
