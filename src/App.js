@@ -24,6 +24,8 @@ class App extends Component {
                 openMenu.style.display = "none";
             } else {
                 openMenu.style.display = "block";
+                document.documentElement.style.overflow = 'hidden';
+                document.body.scroll = "no";
             }
         }
     closeOverlay = () =>{
