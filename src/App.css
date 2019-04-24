@@ -1,11 +1,4 @@
 
-/*.App-logo {
-  margin-left: 44px;
-}*/
-
-/*button:focus {
-  outline:0;
-}*/
 
 body {
   background: url("assets/electromagnetic_spectrum.jpg") no-repeat center center fixed;
@@ -18,7 +11,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /*overflow: hidden*/
+ 
 }
 h1, p{
   color:white;
@@ -29,7 +22,7 @@ h1, p{
 }
 .name-title{
   width: 50vw;
-  /*position:fixed;*/
+  
 }
 
 
@@ -106,67 +99,10 @@ h1, p{
   .hamburger--3dxy.is-active .hamburger-inner::after {
     transform: translate3d(0, -10px, 0) rotate(-45deg); }
 
-
-
-/*.App {
-  text-align: left;
-}*/
-
-/*.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}*/
-
-
-/*.App-header {
-  z-index: -10;
-  position: relative;
-  background-image: url("electromagnetic_spectrum.jpg");
-  background: linear-gradient(midnightblue, white);
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center;
-  padding-bottom: 20px;
-  color: white;
-
-}*/
-
-/*.App-name {
-  font-size: 1.5em;
-
-}
-
-.App-title {
-  font-size: large;
-  margin-bottom: 50px;
-}
-
-.App-contact {
-  border-width: 3px;
-  border-style: solid;
-  border-color: #26466D;
-  color: #26466D;
-  background-color: transparent;
-  transition: 0.1s background-color linear, 0.1s color linear;
-  padding: 21px 34px;
-  font-family: promixa-nova;
-  font-size: 15px;
-  font-weight: 500px;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  padding: 0;
-  width: 150px;
-  height:50px;
-  display: table-cell;
-  vertical-align: middle;
-  margin: 0 auto;
-  margin-top: 20px;
-
-}*/
 #portfolio-video-container{
   display: flex;
   flex-flow: row wrap;
-  padding:  0 300px;
+  padding:  20px 300px;
   
 }
 
@@ -268,14 +204,13 @@ canvas {
     background-position: 50% 50%;
     opacity: 0.7;
     z-index: -100;
-  /*background: transparent;
-  color: "#3CA9D1";*/
+
 }
 
 
 @media only screen and (max-width: 1400px){
   #portfolio-video-container, #about-container{
-    padding: 0 100px;
+    padding: 20px 100px;
   }
    .text-portfolio-video{
     width: 100%;
@@ -295,7 +230,7 @@ canvas {
     font-size: 12px;
   }
   #portfolio-video-container, #about-container{
-    padding: 0 50px;
+    padding: 20px 50px;
   }
  
 
@@ -303,17 +238,13 @@ canvas {
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {
   /* rules for iPad in landscape orientation */
- /* #portfolio-flex-container{
-    width: 50vw;
-  }*/
+ 
   
 }
 
 @media only screen and (device-width: 1024px) and (orientation: portrait) {
   /* rules for iPad in portrait orientation */
-  /* #portfolio-flex-container{
-    width: 50vw;
-  }*/
+  
   
 }
 
@@ -322,21 +253,5 @@ canvas {
   .job-title{
     font-size: 12px !important
   }
- /* canvas, .particles-js{
-    width: 80%;
-  }*/
- /* #portfolio-flex-container{
-    width: 76vw;
-  }*/
-  
-  /*nav {
 
-    .navWide {
-      display: block;
-    }
-
-    .navNarrow {
-      display: none;
-    }
-  }*/
 }
