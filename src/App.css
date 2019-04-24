@@ -237,6 +237,33 @@ section:hover .overlay{
   text-align:center;
 }
 
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 0.5;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  white-space: pre-wrap;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1400px){
   #portfolio-video-container, #about-container{
     padding: 20px 100px;

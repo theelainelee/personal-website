@@ -15,6 +15,13 @@ import { Parallax } from 'react-scroll-parallax';
 
 
 class App extends Component {
+  constructor(props){
+    super(props)
+
+    this.state = {
+      width: window.innerWidth
+    }
+  }
 
         hamburgerToggle(event){  
           event.target.classList.toggle("is-active")
@@ -56,6 +63,8 @@ class App extends Component {
     
 
   render() {
+    const {width} = this.state;
+    const isMobile = width < 700;
     return (
       <ParallaxProvider>
 
@@ -90,12 +99,18 @@ class App extends Component {
      <div id='portfolio-flex-container'> 
 
       <section className='work-1'>
-        <div className='overlay' style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
+      {isMobile ? 
+        <div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
          <br/><br/>
          <p>Click to view page</p>
-         </div>
+         </div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
+        <h1>Production Website</h1>
+         <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div> }
         </section>
          <section className='work-2'>
 
