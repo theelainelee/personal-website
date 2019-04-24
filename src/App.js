@@ -89,51 +89,54 @@ class App extends Component {
        
      <div id='portfolio-flex-container'> 
 
-      <section>
-
-        <h1>Work 1</h1>
-         <Portfolio  onClick={() => window.open('https://google.com', '_blank')} title='React Website' text='long scroll website built with React, React Router'/>
+      <section className='work-1'>
+        <div className='overlay' style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
+        <h1>Production Website</h1>
+         <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
+         <br/><br/>
+         <p>Click to view page</p>
+         </div>
         </section>
-         <section>
+         <section className='work-2'>
 
           <h1>Work 2</h1>
       <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
         </section>
-         <section>
+         <section className='work-3'>
 
    
           <h1>Work 3</h1>
       <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
     
         </section>
-          <section>
+          <section className='work-4'>
 
           <h1>Work 4</h1>
       <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
 
         </section>
-        <section>
+        <section className='work-5'>
 
  
           <h1>Work 5</h1>
       <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
          
         </section>
-         <section>
+         <section className='work-6'>
 
  
           <h1>Work 6</h1>
       <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
         
         </section>  
-        <section>
+        <section className='work-7'>
 
  
           <h1>Work 7</h1>
       <Portfolio  title='React Website' text='long scroll website built with React, React Router'/>
         
         </section>  
-        <section>
+        <section className='work-8'>
 
  
           <h1>Work 8</h1>
@@ -157,22 +160,21 @@ class App extends Component {
       </div>
       <div id='about-container'>
       <h1>ABOUT</h1>
-         <div className='left-about-text'>Hello! My name is Elaine and welcome to my world!  
+         <div className='left-about-text'>Hello! My name is Elaine!  
          I got my start in programming during my senior year at Cornell University.  
          I had finished all of my required courses and decided to take a computer programming course as an elective.  
          I took CS101 Intro to Computer Science. I learned about COBOL, C++, C# and the evolution of programming.  
-         It was a great foundation for my future career as a consummate programmer. My first job out of college was at Computer Sciences Corporation as a computer analyst.  
+         It was a great foundation for my future career as a programmer. My first job out of college was at Computer Sciences Corporation as a computer analyst.  
          I had the best computer programming training with this company.  
          While I left the industry to try my hand at Wall Street, I eventually found my way back to my first love and passion.  
          I also found myself moving from the East Coast to the West. 
          To get up-to-date quickly on the modern technology stack in my new city of Los Angeles, I invested in obtaining a technical foundation.  
          I took an immersive full-time web development course at General Assembly.  
          During that time Ruby on Rails and AngularJS were quite popular and hence I learned those languages.
-         After graduation I immediately received a job offer at Beachbody LLC in Santa Monica. 
-         Learning on the job is something you cannot pay to obtain. 
+         After graduation I received a job offer at Beachbody LLC in Santa Monica. 
+         During my 2 1/2 years at Beachbody I created landing pages and worked on exciting new features.
          </div>
          <div className='right-about-text'>
-         During my 2 1/2 years at Beachbody I created landing pages, work on exciting new features, and worked in a high-performing team. 
          I learned the difference between merging and rebasing, used Sass, and worked with a CMS.  
          I wanted to expand my programming skills by exploring Javascript animations and creating more unique, innovative web applications. 
          I began my career in the ad tech space at RED Interactive Agency, part of the EGM (Endeavour) family.  
@@ -180,8 +182,8 @@ class App extends Component {
          I have also created responsive email templates and websites.  
          As always in my desire to keep up-to-date with modern technology, I have been using ReactJS for the past 2 years building both production sites as well as personal projects.  
          I was also able to explore using a lower K weight version of React, called Preact.  The best way to continue growing and to solidify knowledge is to teach.  
-         I was a part-time evening teaching assistant at UCLA for their programming course. 
-         This is me in a nutshell. <br/> Pleasure to have you visit my world! 
+         I was a part-time teaching assistant at UCLA for their evening programming course. 
+         This is me in a nutshell. <br/><br/> Pleasure to have you visit my world! 
          </div>
        </div>
      </div>

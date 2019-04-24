@@ -182,8 +182,13 @@ header{
 }
 section {
   background-color: rgba(211,211,211,0.1);
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 5px solid black;
   margin: 10px;
+  width: 400px;
+  height: 400px;
+  position:relative;
+
 }
 
 canvas {
@@ -207,6 +212,30 @@ canvas {
 
 }
 
+.work-1{
+  background: url('assets/red-tech.jpg') no-repeat center center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  white-space: pre-wrap;
+ 
+}
+section:hover .overlay{
+  cursor: pointer;
+  opacity: 1;
+  z-index: 100;
+  text-align:center;
+}
 
 @media only screen and (max-width: 1400px){
   #portfolio-video-container, #about-container{

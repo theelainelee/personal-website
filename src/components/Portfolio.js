@@ -5,7 +5,7 @@ const Portfolio = ({title, imgPath, text, handleClick}) => {
 	return(
 	<div> 
 		<img src={imgPath} onClick={handleClick}/>
-		<h1>{title}</h1>
+		<p>{title}</p>
 		<p>{text}</p>
 	</div>
 	)
