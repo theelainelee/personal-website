@@ -253,24 +253,21 @@ class App extends Component {
          <div className='left-about-text'>Hello! My name is Elaine!  
          I got my start in programming during my senior year at Cornell University.  
          I had finished all of my required courses and decided to take a computer programming course as an elective.  
-         I took CS101 Intro to Computer Science. I learned about COBOL, C++, C# and the evolution of programming.  
-         It was a great foundation for my future career as a programmer. My first job out of college was at Computer Sciences Corporation as a computer analyst.  
-         I had the best computer programming training with this company.  
+         It was a great foundation for my future career as a programmer. 
+         My first job out of college was at Computer Sciences Corporation as a computer analyst.  
          While I left the industry to try my hand at Wall Street, I eventually found my way back to my first love and passion.  
-         I also found myself moving from the East Coast to the West. 
-         To get up-to-date quickly on the modern technology stack in my new city of Los Angeles, I invested in obtaining a technical foundation.  
+         To get up-to-date quickly on the modern technology stack in Los Angeles, I invested in obtaining a technical foundation.  
          I took an immersive full-time web development course at General Assembly.  
          During that time Ruby on Rails and AngularJS were quite popular and hence I learned those languages.
          After graduation I received a job offer at Beachbody LLC in Santa Monica. 
          During my 2 1/2 years at Beachbody I created landing pages and worked on exciting new features.
          </div>
-         <div className='right-about-text'>
-         I learned the difference between merging and rebasing, used Sass, and worked with a CMS.  
+         <div className='right-about-text'>  
          I wanted to expand my programming skills by exploring Javascript animations and creating more unique, innovative web applications. 
          I began my career in the ad tech space at RED Interactive Agency, part of the EGM (Endeavour) family.  
          I have been at RED now for 2 years and created a multitude of web applications for our clients ranging from Nike, Hulu, Netflix, Disney, and Paramount.  
          I have also created responsive email templates and websites.  
-         As always in my desire to keep up-to-date with modern technology, I have been using ReactJS for the past 2 years building both production sites as well as personal projects.  
+         As always in my desire to keep up-to-date with modern technology, I have been using ReactJS in production for the past 2 years.  
          I was also able to explore using a lower K weight version of React, called Preact.  The best way to continue growing and to solidify knowledge is to teach.  
          I was a part-time teaching assistant at UCLA for their evening programming course. 
          This is me in a nutshell. <br/><br/> Pleasure to have you visit my world! 
