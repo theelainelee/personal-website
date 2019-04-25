@@ -113,7 +113,6 @@ class App extends Component {
          </div> }
         </section>
          <section className='work-2'>
-
           {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://prod.wearered.com', '_blank')}>
         <h1>Production Website</h1>
@@ -143,7 +142,6 @@ class App extends Component {
     
         </section>
           <section className='work-4'>
-
            {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} >
         <h1>Production Product Page</h1>
@@ -160,8 +158,6 @@ class App extends Component {
 
         </section>
         <section className='work-5'>
-
- 
          {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/jBoEyw', '_blank')}>
         <h1>Mobile Alarm Clocke</h1>
@@ -177,8 +173,6 @@ class App extends Component {
          
         </section>
          <section className='work-6'>
-
- 
           {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/RVRGrO', '_blank')}>
         <h1>Production Feature</h1>
@@ -194,8 +188,6 @@ class App extends Component {
         
         </section>  
         <section className='work-7'>
-
- 
           {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qryjGx', '_blank')}>
         <h1>Sticky Notes</h1>
@@ -211,8 +203,6 @@ class App extends Component {
         
         </section>  
         <section className='work-8'>
-
- 
          {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('www.elainelee.world', '_blank')}>
         <h1>Personal Website</h1>
@@ -225,7 +215,6 @@ class App extends Component {
          <br/>
          <p>Click to view website</p>
          </div> }
-        
         </section> 
         {/*<section className='work-9'>
 
