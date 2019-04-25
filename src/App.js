@@ -237,7 +237,7 @@ class App extends Component {
         </div>
         <div id='portfolio-video-container'>
 
-        <h3 className='text-portfolio-video'>This is a video compilation of some ad agency work I have done with banner HTML ads for clients such as Disney, Lego, Nike, Pixar. The technologies used are Javascript and Greensock for animation.</h3>
+        <h3 className='text-portfolio-video' >This is a video compilation of some ad agency work I have done for clients such as Disney, Lego, Nike, Pixar. The technologies used for these HTML5 banner ads are Javascript and Greensock for animation.  Some are Flashtalking, Sizmek, DoubleClick Studio, and RED's open-source, homegrown framework.  You can find more information <a href='htttps://tech.wearered.com' target='_blank' style={{color: 'lightblue'}}> by clicking here</a> to visit the website I built for RED Ad Tech.  </h3>
        <ReactPlayer 
             playing
             url={video}
