@@ -250,9 +250,8 @@ class App extends Component {
       </div>
       <div id='about-container'>
       <h1>ABOUT</h1>
-         <div className='left-about-text'>Hello! My name is Elaine!  
-         I got my start in programming during my senior year at Cornell University.  
-         I had finished all of my required courses and decided to take a computer programming course as an elective.  
+         <div className='left-about-text'>Hello! My name is Elaine!  <br/><br/>
+         I got my start in a programming class during my senior year at Cornell University.  
          It was a great foundation for my future career as a programmer. 
          My first job out of college was at Computer Sciences Corporation as a computer analyst.  
          While I left the industry to try my hand at Wall Street, I eventually found my way back to my first love and passion.  
