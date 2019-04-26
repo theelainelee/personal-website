@@ -5,8 +5,10 @@ import ReactPlayer from 'react-player';
 import video from './assets/ElaineLee_Portfolio_aminated_works.mov'
 import ParticlesContainer from './components/Particles'
 import Portfolio from './components/Portfolio'
+import ThreeScene from './components/ThreeScene'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
+
 // import ReactDOM from 'react-dom';
 // import Media from 'react-media';
 
@@ -69,7 +71,7 @@ class App extends Component {
       <ParallaxProvider>
 
       <div className="App">
-
+      <ThreeScene/>
       <header>
        <button type="button" className="hamburger-menu hamburger--3dxy" onClick= {this.hamburgerToggle}>
              <span className="hamburger-box" >
