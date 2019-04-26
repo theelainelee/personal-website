@@ -275,6 +275,11 @@ class App extends Component {
          </div>
        </div>
      </div>
+     <div id='about-container'>
+      <h1>CONTACT</h1>
+      <p>email: elaneylee@gmail.com</p>
+      
+      </div>
       </ParallaxProvider>
      
     );
