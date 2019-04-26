@@ -106,12 +106,12 @@ class App extends Component {
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
          
-         <p>Click to view page</p>
+         <p><a href='https://tech.wearered.com' target='_blank'>Click to view page</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
         
-         <p>Click to view website</p>
+         <p><a href='https://tech.wearered.com' target='_blank'>Click to view website</a></p>
          </div> }
         </section>
          <section className='work-2'>
@@ -120,12 +120,12 @@ class App extends Component {
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
         
-         <p>Click to view page</p>
+         <p><a href='https://prod.wearered.com' target='_blank'>Click to view page</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://prod.wearered.com', '_blank')}>
         <h1>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
          
-         <p>Click to view website</p>
+         <p><a href='https://prod.wearered.com' target='_blank'>Click to view website</a></p>
          </div> }
         </section>
          <section className='work-3'>
@@ -133,12 +133,12 @@ class App extends Component {
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
         <h1>Production Feature</h1>
           <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
-         <p>Click to view page</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>Click to view page</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
         <h1>Production Feature</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
         
-         <p>Click to view CodePen</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>Click to view CodePen</a></p>
          </div> }
     
         </section>
@@ -147,12 +147,10 @@ class App extends Component {
         <div><div className='fade-in'  style={{textAlign: 'center'}} >
         <h1>Production Product Page</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass, Media Queries, Mobile Responsive, Git'}/>
-         
-
          <p>Click to view page</p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} >
         <h1>Production Product Page</h1>
-         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass, Media Queries, Mobile Responsive, Git, hosted on CodePen, also viewable on Beachbody website'}/>
+         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJS, jQuery, Mobile Responsive, Git, on CodePen and Beachbody website'}/>
          
          <p><a href='https://codepen.io/elaineleeworld/pen/pPjewO' target='_blank'>Click to view CodePen</a></p>
          <p style={{zIndex: '10000'}}><a href='https://www.beachbody.com/product/fitness_programs/3-week-yoga-retreat-beginners-dvds.do' target='_blank'>Click to view Beachbody page</a></p>
@@ -165,12 +163,12 @@ class App extends Component {
         <h1>Mobile Alarm Clocke</h1>
          <Portfolio   title={'Built for:\nInterview Project'} text={'Technologies used:\n Vanilla Javascript, HTML5, CSS3, hosted on CodePen'}/>
          
-         <p>Click to view page</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/jBoEyw' target='_blank'>Click to view page</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/jBoEyw', '_blank')}>
         <h1>Mobile Alarm Clock</h1>
          <Portfolio   title={'Built for:\nInterview Project'} text={'Technologies used:\n Vanilla Javascript, HTML5, CSS3, hosted on CodePen'}/>
          
-         <p>Click to view CodePen</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/jBoEyw' target='_blank'>Click to view CodePen</a></p>
          </div> }
          
         </section>
@@ -180,12 +178,12 @@ class App extends Component {
         <h1>Production Feature</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
          
-         <p>Click to view page</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>Click to view CodePen</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/RVRGrO', '_blank')}>
         <h1>Production Feature</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
          
-         <p>Click to view CodePen</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>Click to view CodePen</a></p>
          </div> }
         
         </section>  
@@ -195,27 +193,27 @@ class App extends Component {
         <h1>Sticky Notes</h1>
          <Portfolio   title={'Built for:\nInterview Question'} text={'Technologies used:\nJavascript, jQuery, Sass'}/>
          
-         <p>Click to view page</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qryjGx' target='_blank'>Click to view CodePen</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qryjGx', '_blank')}>
         <h1>Sticky Notes</h1>
          <Portfolio   title={'Built for:\nInterview Question'} text={'Technologies used:\nJavascript, jQuery, HTML5, CSS3'}/>
          
-         <p>Click to view CodePen</p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qryjGx' target='_blank'>Click to view CodePen</a></p>
          </div> }
         
         </section>  
         <section className='work-8'>
          {isMobile ? 
-        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('www.elainelee.world', '_blank')}>
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://www.elainelee.world', '_blank')}>
         <h1>Personal Website</h1>
          <Portfolio   title={'Built for:\nPublic, Freelance Work, Interviewers, Recruiters'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
          
-         <p>Click to view website</p>
-         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('www.elainelee.world', '_blank')}>
+         <p><a href='https:elainelee.world' target='_blank'>Click to view website</a></p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://www.elainelee.world', '_blank')}>
         <h1>Personal Website</h1>
          <Portfolio   title={'Built for:\nPublic, Freelance Work, Interviewers, Recruiters'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
         
-         <p>Click to view website</p>
+         <p><a href='https://elainelee.world' target='_blank'>Click to view website</a></p>
          </div> }
         </section> 
         {/*<section className='work-9'>
@@ -252,7 +250,7 @@ class App extends Component {
       </div>
       <div id='about-container'>
       <h1>ABOUT</h1>
-         <div className='left-about-text'>Hello! My name is Elaine!  <br/><br/>
+         <div className='left-about-text'>Hello! My name is Elaine.  <br/><br/>
          I got my start in a programming class during my senior year at Cornell University.  
          It was a great foundation for my future career as a programmer. 
          My first job out of college was at Computer Sciences Corporation as a computer analyst.  
@@ -277,8 +275,8 @@ class App extends Component {
      </div>
      <div id='about-container'>
       <h1>CONTACT</h1>
-      <p>email: elaneylee@gmail.com</p>
-      
+      <p>click to email me:{'\n'}<a href='mailto:elaneylee@gmail.com'>{'\n'}elaneylee@gmail.com</a></p>
+
       </div>
       </ParallaxProvider>
      
