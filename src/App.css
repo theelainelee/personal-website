@@ -24,6 +24,45 @@ h1, p{
   width: 50vw;
   
 }
+.button-container{
+  display: inline-block;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*bottom: 0;*/
+  justify-content: center;
+  z-index: 1000;
+  overflow:hidden;
+
+}
+.button-styles{
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: auto;
+  position:relative;
+  border-radius: 10px;
+  margin-top: 550px;
+  width: 8rem;
+  height: 2rem;
+  background: #18CAE6;
+  color: white;
+  border: 2px solid white;
+
+}
+
+.anim{
+  animation: anim 2s ease-out 0s 1;
+}
+
+@keyframes anim{
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transfrom: translateY(0%);
+  }
+}
 
 
 
@@ -32,6 +71,8 @@ h1, p{
   flex-flow: row wrap;
   justify-content: center;
   padding: 150px 50px 50px 50px;
+  display:none;
+  
 }
 
 .hamburger-menu {

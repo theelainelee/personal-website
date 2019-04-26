@@ -5,6 +5,7 @@ import ReactPlayer from 'react-player';
 import video from './assets/ElaineLee_Portfolio_aminated_works.mov'
 import ParticlesContainer from './components/Particles'
 import Portfolio from './components/Portfolio'
+import Button from './components/Button'
 import ThreeScene from './components/ThreeScene'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
@@ -21,9 +22,24 @@ class App extends Component {
     super(props)
 
     this.state = {
-      width: window.innerWidth
+      width: window.innerWidth,
+      addClass: false,
+      isHidden: true,
+      clicked: false
     }
+    this.buttonClick = this.buttonClick.bind(this)
+    this.hamburgerToggle = this.hamburgerToggle.bind(this)
   }
+
+    buttonClick(e){
+        console.log('BUTTON CLICKED')
+        // this.setState({
+        //     addClass: true,
+        //     isHidden: false,
+        //     clicked:true
+        // }) 
+        document.querySelector(".button-container").style.display = 'none';    
+    }
 
         hamburgerToggle(event){  
           event.target.classList.toggle("is-active")
@@ -67,11 +83,14 @@ class App extends Component {
   render() {
     const {width} = this.state;
     const isMobile = width < 600;
+    const className = this.state.clicked ? 'anim' : null;
+    
     return (
-      <ParallaxProvider>
+    
 
       <div className="App">
-      <ThreeScene/>
+      <ThreeScene />
+
       <header>
        <button type="button" className="hamburger-menu hamburger--3dxy" onClick= {this.hamburgerToggle}>
              <span className="hamburger-box" >
@@ -96,9 +115,10 @@ class App extends Component {
         </header> 
            
     <ParticlesContainer/>
-           
+         <Button text='Click To Enter' onClick={this.buttonClick} className={className} />
+
        
-     <div id='portfolio-flex-container'> 
+     <div id='portfolio-flex-container' className='anim' > 
 
       <section className='work-1'>
       {isMobile ? 
@@ -235,7 +255,7 @@ class App extends Component {
         </section>*/}
         
         </div>
-        <div id='portfolio-video-container'>
+        <div id='portfolio-video-container' style={{display: 'none'}}>
 
         <h3 className='text-portfolio-video' >This is a video compilation of some ad agency work I have done for clients such as Disney, Lego, Nike, Pixar. The technologies used for these HTML5 banner ads are Javascript and Greensock for animation.  Some are Flashtalking, Sizmek, DoubleClick Studio, and RED's open-source, homegrown framework.  You can find more information <a href='htttps://tech.wearered.com' target='_blank' style={{color: 'lightblue'}}> by clicking here</a> to visit the website I built for RED Ad Tech.  </h3>
        <ReactPlayer 
@@ -248,7 +268,7 @@ class App extends Component {
           />
       
       </div>
-      <div id='about-container'>
+      <div id='about-container' style={{display: 'none'}}>
       <h1>ABOUT</h1>
          <div className='left-about-text'>Hello! My name is Elaine.  <br/><br/>
          I got my start in a programming class during my senior year at Cornell University.  
@@ -272,13 +292,14 @@ class App extends Component {
          This is me in a nutshell. <br/><br/> Pleasure to have you visit my world! 
          </div>
        </div>
-     </div>
-     <div id='about-container'>
+       <div id='about-container' style={{display: 'none'}}>
       <h1>CONTACT</h1>
       <p>click to email me:{'\n'}<a href='mailto:elaneylee@gmail.com'>{'\n'}elaneylee@gmail.com</a></p>
 
       </div>
-      </ParallaxProvider>
+     </div>
+     
+     
      
     );
   }

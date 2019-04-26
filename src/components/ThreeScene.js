@@ -201,7 +201,13 @@ componentDidMount() {
         var windowHeight = window.innerHeight;
 
         window.addEventListener( 'resize', onWindowResize, false );
+        // window.addEventListener('click', onClickHide, false);
 
+        // function onClickHide(){
+        // 	console.log('clicked')
+        // 	// cube.visible = false
+        	
+        // }
         function onWindowResize( event ) {
 
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -231,8 +237,8 @@ componentDidMount() {
 
         animate();
     }
-    render() {
-        return <div ref={ref => (this.mount = ref)} />;
+    render(props) {
+        return <div onClick={props} ref={ref => (this.mount = ref)} />;
     }
 }
 export default ThreeScene
