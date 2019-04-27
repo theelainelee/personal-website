@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://theelainelee.github.io/",
+  "homepage": "https://elaineleeworld.github.io/",
   "dependencies": {
     "eslint-config-prettier": "^4.1.0",
     "gh-pages": "^1.1.0",
