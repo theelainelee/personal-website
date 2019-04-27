@@ -42,21 +42,29 @@ class App extends Component {
     }
 
         hamburgerToggle(event){  
-          event.target.classList.toggle("is-active")
-
+         
+        
           let openMenu = document.querySelector(".nav-menu");
             if (openMenu.style.display === "block") {
-                openMenu.style.display = "none";
+                 openMenu.style.display = "none";
+                 event.target.classList.remove("is-active")
+                  
+                 // event.target.classList.toggle('is-active');
                  document.documentElement.style.overflow = 'scroll';
                  document.body.scroll = "yes";
             } else {
                 openMenu.style.display = "block";
+event.target.classList.add('is-active');
+
                 document.documentElement.style.overflow = 'hidden';
                 document.body.scroll = "no";
             }
         }
-    closeOverlay = () =>{
-   document.querySelector(".hamburger-menu hamburger--3dxy").remove('active');
+    closeOverlay = (event) =>{
+   // document.querySelector(".hamburger--3dxy").remove('is-active');
+  
+   
+
     console.log('HIDE OVERLAY')
     let openMenu = document.querySelector(".nav-menu");
     openMenu.style.display = "none";
@@ -69,6 +77,8 @@ class App extends Component {
     console.log('HIDE OVERLAY')
     let openMenu = document.querySelector(".nav-menu");
     openMenu.style.display = "none";
+    document.querySelector(".hamburger-menu.hamburger--3dxy.is-active").style.display = 'none';
+    document.querySelector(".hamburger-menu.hamburger--3dxy").style.display = 'block';
     // window.scrollTo({
     //   top: window.innerHeight - 200,
     //   behavior: 'smooth'
@@ -226,7 +236,7 @@ class App extends Component {
          {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('http://portfolio.ff0000.com/ua_willtrips_2018/', '_blank')}>
         <h1>UnderArmour Case Study</h1>
-         <Portfolio   title={'Built for:\nRED Interactive Agency for ua_willtrips_2018'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
+         <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
          
          <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>Click to view website</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('http://portfolio.ff0000.com/ua_willtrips_2018/', '_blank')}>
