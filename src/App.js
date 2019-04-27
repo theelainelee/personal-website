@@ -48,7 +48,7 @@ class App extends Component {
             if (openMenu.style.display === "block") {
                 openMenu.style.display = "none";
                  document.documentElement.style.overflow = 'scroll';
-    document.body.scroll = "yes";
+                 document.body.scroll = "yes";
             } else {
                 openMenu.style.display = "block";
                 document.documentElement.style.overflow = 'hidden';
@@ -56,7 +56,7 @@ class App extends Component {
             }
         }
     closeOverlay = () =>{
-
+   document.querySelector(".hamburger-menu hamburger--3dxy").remove('active');
     console.log('HIDE OVERLAY')
     let openMenu = document.querySelector(".nav-menu");
     openMenu.style.display = "none";
@@ -224,16 +224,16 @@ class App extends Component {
         </section>  
         <section className='work-8'>
          {isMobile ? 
-        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://www.elainelee.world', '_blank')}>
-        <h1>Personal Website</h1>
-         <Portfolio   title={'Built for:\nPublic, Freelance Work, Interviewers, Recruiters'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('http://portfolio.ff0000.com/ua_willtrips_2018/', '_blank')}>
+        <h1>UnderArmour Case Study</h1>
+         <Portfolio   title={'Built for:\nRED Interactive Agency for ua_willtrips_2018'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
          
-         <p><a href='https:elainelee.world' target='_blank'>Click to view website</a></p>
-         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://www.elainelee.world', '_blank')}>
-        <h1>Personal Website</h1>
-         <Portfolio   title={'Built for:\nPublic, Freelance Work, Interviewers, Recruiters'} text={'Technologies used:\nReactJS, CSS3, ES6, NodeJS, Webpack, GitHub Pages'}/>
+         <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>Click to view website</a></p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('http://portfolio.ff0000.com/ua_willtrips_2018/', '_blank')}>
+        <h1>UnderArmour Case Study</h1>
+         <Portfolio   title={'Built for:\nRED Interactive Agency for UA'} text={'Technologies used:\nJS, CSS3, Mobile Responsive, Media Queries'}/>
         
-         <p><a href='https://elainelee.world' target='_blank'>Click to view website</a></p>
+         <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>Click to view website</a></p>
          </div> }
         </section> 
         {/*<section className='work-9'>
