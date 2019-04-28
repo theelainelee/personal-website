@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import ReactPlayer from 'react-player';
 import video from './assets/ElaineLee_Portfolio_aminated_works.mov'
+import myPhoto from './assets/myPhoto.png'
 import ParticlesContainer from './components/Particles'
 import Portfolio from './components/Portfolio'
 import Button from './components/Button'
@@ -55,35 +56,58 @@ class App extends Component {
                 document.body.scroll = "no";
             }
         }
-    closeOverlay = (event) =>{
-   // document.querySelector(".hamburger--3dxy").remove('is-active');
-  
-   
-
-    console.log('HIDE OVERLAY')
-    let openMenu = document.querySelector(".nav-menu");
-    openMenu.style.display = "none";
-     let hamburgerMenu = document.querySelector('.hamburger--3dxy');
-    hamburgerMenu.classList.remove('is-active')
-    window.scrollTo(0,document.body.scrollTop);
-    document.documentElement.style.overflow = 'scroll';
-    document.body.scroll = "yes";
+    closeOverlay = () =>{
+        console.log('Home')
+        let openMenu = document.querySelector(".nav-menu");
+        openMenu.style.display = "none";
+         let hamburgerMenu = document.querySelector('.hamburger--3dxy');
+        hamburgerMenu.classList.remove('is-active')
+        window.scrollTo(0,document.body.scrollTop);
+        document.documentElement.style.overflow = 'scroll';
+        document.body.scroll = "yes";
+        let portfolioMenu = document.querySelector('#portfolio-flex-container')
+        portfolioMenu.style.display = 'none'
+        let videoMenu = document.querySelector('#portfolio-video-container')
+        videoMenu.style.display = 'none'
+        let aboutMenu = document.querySelector('#about-container')
+        aboutMenu.style.display = 'none'
+        document.querySelector(".button-container").style.display = 'block';  
   }
-   closeOverlayAbout = () =>{
 
-    console.log('HIDE OVERLAY')
-    let openMenu = document.querySelector(".nav-menu");
-    openMenu.style.display = "none";
-    let hamburgerMenu = document.querySelector('.hamburger--3dxy');
-    hamburgerMenu.classList.remove('is-active')
-  
-    // window.scrollTo({
-    //   top: window.innerHeight - 200,
-    //   behavior: 'smooth'
-    // }); 
-    window.scrollTo(0, document.body.scrollHeight);
-    document.documentElement.style.overflow = 'scroll';
-    document.body.scroll = "yes";
+  showPortfolioOverlay=() =>{
+        console.log('Portfolio')
+        let openMenu = document.querySelector(".nav-menu");
+        openMenu.style.display = "none";
+        let hamburgerMenu = document.querySelector('.hamburger--3dxy');
+        hamburgerMenu.classList.remove('is-active')
+        let portfolioMenu = document.querySelector('#portfolio-flex-container')
+        portfolioMenu.style.display = 'flex'
+        let videoMenu = document.querySelector('#portfolio-video-container')
+        videoMenu.style.display = 'none'
+        let aboutMenu = document.querySelector('#about-container')
+        aboutMenu.style.display = 'none'
+        document.querySelector(".button-container").style.display = 'none'; 
+  }
+   showAboutOverlay = () =>{
+        console.log('About')
+        let openMenu = document.querySelector(".nav-menu");
+        openMenu.style.display = "none";
+        let hamburgerMenu = document.querySelector('.hamburger--3dxy');
+        hamburgerMenu.classList.remove('is-active')
+        let portfolioMenu = document.querySelector('#portfolio-flex-container')
+        portfolioMenu.style.display = 'none'
+        let videoMenu = document.querySelector('#portfolio-video-container')
+        videoMenu.style.display = 'none'
+        let aboutMenu = document.querySelector('#about-container')
+        aboutMenu.style.display = 'block'
+        document.querySelector(".button-container").style.display = 'none'; 
+        // window.scrollTo({
+        //   top: window.innerHeight - 200,
+        //   behavior: 'smooth'
+        // }); 
+        window.scrollTo(0, document.body.scrollTop);
+        document.documentElement.style.overflow = 'scroll';
+        document.body.scroll = "yes";
   }
    
     
@@ -108,9 +132,9 @@ class App extends Component {
        </button>
        <nav className="nav-menu" >
                <li onClick={this.closeOverlay}>home</li>
-               <li onClick={this.closeOverlay}>portfolio</li>
-               <li onClick={this.closeOverlayAbout}>about</li>
-               <li onClick={this.closeOverlay}>contact</li>
+               <li onClick={this.showPortfolioOverlay}>portfolio</li>
+               <li onClick={this.showAboutOverlay}>about</li>
+               <li ><a id='email-link' href="mailto:elaneylee@gmail.com" target="_top" onClick={this.closeOverlay}>email me</a></li>
              </nav>
        
        
@@ -123,7 +147,7 @@ class App extends Component {
         </header> 
            
     <ParticlesContainer/>
-         <Button text='Click To Enter' onClick={this.buttonClick} className={className} />
+         <Button text='Click To Enter' onClick={this.buttonClick} style={{margin: '0 auto'}}/>
 
        
      <div id='portfolio-flex-container' className='anim' > 
@@ -244,23 +268,6 @@ class App extends Component {
          <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>Click to view website</a></p>
          </div> }
         </section> 
-        {/*<section className='work-9'>
-
- 
-         {isMobile ? 
-        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
-        <h1>Production Website</h1>
-         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass'}/>
-         <br/><br/>
-         <p>Click to view page</p>
-         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
-        <h1>Production Website</h1>
-         <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass'}/>
-         <br/><br/>
-         <p>Click to view page</p>
-         </div> }
-        
-        </section>*/}
         
         </div>
         <div id='portfolio-video-container' style={{display: 'none'}}>
@@ -277,12 +284,12 @@ class App extends Component {
       
       </div>
       <div id='about-container' style={{display: 'none'}}>
+      <img src={myPhoto}/>
       <h1>ABOUT</h1>
          <div className='left-about-text'>Hello! My name is Elaine.  <br/><br/>
-         I got my start in a programming class during my senior year at Cornell University.  
-         It was a great foundation for my future career as a programmer. 
-         My first job out of college was at Computer Sciences Corporation as a computer analyst.  
-         While I left the industry to try my hand at Wall Street, I eventually found my way back to my first love and passion.  
+         I started my programming career in my senior year at Cornell University.  
+         My first job out of college was at Computer Sciences Corporation (CSC) as a computer analyst.  
+         After a few years, I left the industry to try my hand at Wall Street, but eventually found my way back to my first love and passion.  
          To get up-to-date quickly on the modern technology stack in Los Angeles, I invested in obtaining a technical foundation.  
          I took an immersive full-time web development course at General Assembly.  
          During that time Ruby on Rails and AngularJS were quite popular and hence I learned those languages.
@@ -297,7 +304,7 @@ class App extends Component {
          As always in my desire to keep up-to-date with modern technology, I have been using ReactJS in production for the past 2 years.  
          I was also able to explore using a lower K weight version of React, called Preact.  The best way to continue growing and to solidify knowledge is to teach.  
          I was a part-time teaching assistant at UCLA for their evening programming course. 
-         This is me in a nutshell. <br/><br/> Pleasure to have you visit my world! 
+         I enjoy learning and love creating new web applications that are visually stimulation and innovative.
          </div>
        </div>
        <div id='about-container' style={{display: 'none'}}>

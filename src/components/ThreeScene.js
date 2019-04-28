@@ -186,6 +186,26 @@ componentDidMount() {
         scene.add( lights[ 1 ] );
         scene.add( lights[ 2 ] );
 
+//         var canvas = document.createElement("canvas");
+// var context = canvas.getContext("2d");
+
+// var x = canvas.width / 2;
+// var y = canvas.height / 2;
+// context.font = "30pt Calibri";
+// context.textAlign = "center";
+// context.fillRect(0,0,200,200);
+// context.fillStyle = "white";
+// context.fillText("Hello World!", x, y);
+// let strDataURI = canvas.toDataURL("image/jpeg");
+// let image = new Image();
+// image.src = strDataURI;
+// var mesh = new THREE.MeshBasicMaterial( { map: THREE.TextureLoader( image.src ) } );
+// console.log(mesh);
+// var texture = new THREE.Texture( canvas );
+// texture.needsUpdate = true;
+
+// var material = new THREE.MeshBasicMaterial( { map: texture } );
+
 
 
         // SCALE ON RESIZE

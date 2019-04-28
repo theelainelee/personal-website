@@ -11,6 +11,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  /*overflow-y: hidden;*/
  
 }
 h1, p{
@@ -30,7 +31,8 @@ h1, p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*bottom: 0;*/
+  text-align:center
+  ;
   justify-content: center;
   z-index: 1000;
   overflow:hidden;
@@ -42,7 +44,7 @@ h1, p{
   margin-bottom: auto;
   position:relative;
   border-radius: 10px;
-  margin-top: 550px;
+  margin-top: 590px;
   width: 8rem;
   height: 2rem;
   background: #18CAE6;
@@ -72,6 +74,7 @@ h1, p{
   justify-content: center;
   padding: 150px 50px 50px 50px;
   display:none;
+
   
 }
 
@@ -161,7 +164,7 @@ h1, p{
 }
 
 #about-container{
-  padding:  0 250px;
+  padding:  100px 250px 0px 250px;
   color: white;
   line-height: 1.3;
   overflow:hidden;
@@ -219,11 +222,14 @@ h1, p{
   display: block;
 }
 
-li {
+li, #email-link {
   cursor:pointer;
   color: #18CAE6;
 }
 li:hover{
+  color:white;
+}
+#email-link:hover {
   color:white;
 }
 
@@ -366,7 +372,7 @@ a:hover{
 
 @media only screen and (max-width: 1400px){
   #portfolio-video-container, #about-container{
-    padding: 20px 100px;
+    padding: 100px;
   }
    .text-portfolio-video{
     width: 100%;
@@ -386,7 +392,7 @@ a:hover{
     font-size: 12px;
   }
   #portfolio-video-container, #about-container{
-    padding: 20px 50px;
+    padding: 100px 40px 20px 40px;
   }
 
  
