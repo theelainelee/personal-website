@@ -147,8 +147,6 @@ componentDidMount() {
         var renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
 
-
-
         // MOUNT INSIDE OF REACT
         this.mount.appendChild(renderer.domElement); // mount a scene inside of React using a ref
 
@@ -168,7 +166,8 @@ componentDidMount() {
             color: 0x156289,
             emissive: 0x072534,
             side: THREE.DoubleSide,
-            flatShading: true
+            flatShading: true,
+            map: texture1
         } );
         var cube = new THREE.Mesh(geometry, material);
         scene.add(cube);
@@ -186,7 +185,42 @@ componentDidMount() {
         scene.add( lights[ 1 ] );
         scene.add( lights[ 2 ] );
 
-//         var canvas = document.createElement("canvas");
+        //ADD text
+           var canvas1 = document.createElement('canvas');
+                        var context1 = canvas1.getContext('2d');
+                        context1.font = "Bold 20px Arial"
+                        context1.textAlign = 'center';
+                        context1.fillStyle = "rgba(0,0,0,1)";
+                        context1.fillText('REACTJS', 100, 100);
+
+                        // canvas contents will be used for a texture
+                        var texture1 = new THREE.Texture(canvas1)
+                        texture1.needsUpdate = true;
+
+                        var material1 = new THREE.MeshBasicMaterial({ map: texture1, side: THREE.DoubleSide });
+                        material1.transparent = true;
+
+                        var mesh1 = new THREE.Mesh(
+                            new THREE.PlaneGeometry(2, 2),
+                            material1
+                          );
+                        mesh1.position.set(1, 1, 1);
+                        // mesh1.rotation.x = -0.9;
+                        cube.add(mesh1);
+                        // Note that mesh1 gets added to the shape and not to the scene
+
+                       scene.add(cube)
+
+// var canvas = document.getElementById('canvas');
+// var ctx = canvas.getContext('2d');
+// ctx.font = 'italic 18px Arial';
+// ctx.textAlign = 'center';
+// ctx. textBaseline = 'middle';
+// ctx.fillStyle = 'red'; 
+// ctx.fillText('Your Text', 150, 50);
+
+        // var canvas = document.createElement("canvas");
+        
 // var context = canvas.getContext("2d");
 
 // var x = canvas.width / 2;
@@ -196,6 +230,7 @@ componentDidMount() {
 // context.fillRect(0,0,200,200);
 // context.fillStyle = "white";
 // context.fillText("Hello World!", x, y);
+// scene.add(canvas)
 // let strDataURI = canvas.toDataURL("image/jpeg");
 // let image = new Image();
 // image.src = strDataURI;
@@ -205,6 +240,7 @@ componentDidMount() {
 // texture.needsUpdate = true;
 
 // var material = new THREE.MeshBasicMaterial( { map: texture } );
+                      
 
 
 

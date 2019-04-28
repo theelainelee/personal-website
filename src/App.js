@@ -121,7 +121,7 @@ class App extends Component {
     
 
       <div className="App">
-      <ThreeScene />
+      <ThreeScene id='rotating-cube'/>
 
       <header>
        <button type="button" className="hamburger-menu hamburger--3dxy" onClick= {this.hamburgerToggle}>

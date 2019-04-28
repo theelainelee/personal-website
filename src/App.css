@@ -44,7 +44,7 @@ h1, p{
   margin-bottom: auto;
   position:relative;
   border-radius: 10px;
-  margin-top: 590px;
+  margin-top: 560px;
   width: 8rem;
   height: 2rem;
   background: #18CAE6;
@@ -392,11 +392,11 @@ a:hover{
     font-size: 12px;
   }
   #portfolio-video-container, #about-container{
-    padding: 100px 40px 20px 40px;
+    padding: 120px 40px 20px 40px;
   }
-
- 
-
+  .button-styles{
+    margin-top: 460px;
+  }
 }
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {

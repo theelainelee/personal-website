@@ -10,7 +10,7 @@ cursor: pointer;
   margin-bottom: auto;
   position:relative;
   border-radius: 10px;
-  margin-top: 500px;
+  margin-top: 400px;
   width: 8rem;
   height: 2rem;
   background: #18CAE6;
