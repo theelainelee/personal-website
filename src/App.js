@@ -42,20 +42,15 @@ class App extends Component {
     }
 
         hamburgerToggle(event){  
-         
+          event.target.classList.toggle('is-active');
         
           let openMenu = document.querySelector(".nav-menu");
             if (openMenu.style.display === "block") {
                  openMenu.style.display = "none";
-                 event.target.classList.remove("is-active")
-                  
-                 // event.target.classList.toggle('is-active');
                  document.documentElement.style.overflow = 'scroll';
                  document.body.scroll = "yes";
             } else {
                 openMenu.style.display = "block";
-event.target.classList.add('is-active');
-
                 document.documentElement.style.overflow = 'hidden';
                 document.body.scroll = "no";
             }
@@ -68,6 +63,8 @@ event.target.classList.add('is-active');
     console.log('HIDE OVERLAY')
     let openMenu = document.querySelector(".nav-menu");
     openMenu.style.display = "none";
+     let hamburgerMenu = document.querySelector('.hamburger--3dxy');
+    hamburgerMenu.classList.remove('is-active')
     window.scrollTo(0,document.body.scrollTop);
     document.documentElement.style.overflow = 'scroll';
     document.body.scroll = "yes";
@@ -77,8 +74,9 @@ event.target.classList.add('is-active');
     console.log('HIDE OVERLAY')
     let openMenu = document.querySelector(".nav-menu");
     openMenu.style.display = "none";
-    document.querySelector(".hamburger-menu.hamburger--3dxy.is-active").style.display = 'none';
-    document.querySelector(".hamburger-menu.hamburger--3dxy").style.display = 'block';
+    let hamburgerMenu = document.querySelector('.hamburger--3dxy');
+    hamburgerMenu.classList.remove('is-active')
+  
     // window.scrollTo({
     //   top: window.innerHeight - 200,
     //   behavior: 'smooth'
