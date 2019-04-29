@@ -87,6 +87,8 @@ class App extends Component {
         let aboutMenu = document.querySelector('#about-container')
         aboutMenu.style.display = 'none'
         document.querySelector(".button-container").style.display = 'none'; 
+         document.documentElement.style.overflow = 'scroll';
+        document.body.scroll = "yes";
   }
    showAboutOverlay = () =>{
         console.log('About')
