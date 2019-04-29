@@ -303,7 +303,7 @@ class App extends Component {
          <div className='left-about-text'>
          Elaine began her programming career in her senior year at Cornell University.  
          Her first job out of college was at Computer Sciences Corporation (CSC) as a computer analyst.  
-         After a few years, she left the industry to try my hand at Wall Street, but eventually found her way back to her first love and passion.  
+         After a few years, she left the industry to work on Wall Street, but eventually found her way back to her first love and passion.  
          To get up-to-date quickly on the modern technology stack in Los Angeles, she invested in obtaining a technical foundation.  
          Elaine took an immersive full-time web development course at General Assembly.  
          During that time Ruby on Rails and AngularJS were quite popular and hence she learned those languages.
