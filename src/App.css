@@ -401,13 +401,17 @@ a:hover{
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {
   /* rules for iPad in landscape orientation */
- 
+ .button-styles{
+    margin-top: 860px;
+  }
   
 }
 
 @media only screen and (device-width: 1024px) and (orientation: portrait) {
   /* rules for iPad in portrait orientation */
-  
+  .button-styles{
+    margin-top: 860px;
+  }
   
 }
 
