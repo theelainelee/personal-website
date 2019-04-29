@@ -254,7 +254,7 @@ section {
   border: 5px solid black;
   margin: 10px;
   width: 300px;
-  height: 300px;
+  height: 400px;
   position:relative;
  
 
@@ -283,27 +283,35 @@ canvas {
 
 .work-1{
   background: url('assets/red-tech.jpg') no-repeat center center;
+  background-size: 100% 100%;
 }
 .work-2{
-  background: url('assets/red-prod.jpg') no-repeat center center;
+  background: url('assets/prod.png') no-repeat center center;
+  background-size: cover;
 }
 .work-3{
-  background: url('assets/beachbody.jpg') no-repeat center center;
+  background: url('assets/P90x.png') no-repeat center center;
+  background-size: 120% 100%;
 }
 .work-4{
   background: url('assets/yoga.jpg') no-repeat center center;
+  background-size: 100% 100%;
 }
 .work-5{
   background: url('assets/clock.jpg') no-repeat center center;
+   background-size: 100% 100%;
 }
 .work-6{
-  background: url('assets/beachbody2.png') no-repeat center center;
+  background: url('assets/beachbody_overlay.png') no-repeat center center;
+   background-size: 100% 100%;
 }
 .work-7{
-  background: url('assets/notes.png') no-repeat center center;
+  background: url('assets/stickyNotes.png') no-repeat center center;
+   background-size: cover;
 }
 .work-8{
   background: url('assets/UA.png') no-repeat center center;
+   background-size: cover;
 }
 
 .overlay {
@@ -397,6 +405,10 @@ a:hover{
   .button-styles{
     margin-top: 460px;
   }
+   section {
+     width: 300px;
+      height: 400px;
+  }
 }
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {
@@ -404,7 +416,10 @@ a:hover{
  .button-styles{
     margin-top: 860px;
   }
-  
+   section {
+     width: 300px;
+      height: 400px;
+  }
 }
 
 @media only screen and (device-width: 1024px) and (orientation: portrait) {
@@ -422,7 +437,8 @@ a:hover{
   }
 
   section {
-    height: 200px;
+     width: 300px;
+      height: 400px;
   }
 
 }
