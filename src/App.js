@@ -300,25 +300,24 @@ class App extends Component {
       <div id='about-container' style={{display: 'none'}}>
       <img src={myPhoto}/>
       <h1>ABOUT</h1>
-         <div className='left-about-text'>Hello! My name is Elaine.  <br/><br/>
-         I started my programming career in my senior year at Cornell University.  
-         My first job out of college was at Computer Sciences Corporation (CSC) as a computer analyst.  
-         After a few years, I left the industry to try my hand at Wall Street, but eventually found my way back to my first love and passion.  
-         To get up-to-date quickly on the modern technology stack in Los Angeles, I invested in obtaining a technical foundation.  
-         I took an immersive full-time web development course at General Assembly.  
-         During that time Ruby on Rails and AngularJS were quite popular and hence I learned those languages.
-         After graduation I received a job offer at Beachbody LLC in Santa Monica. 
-         During my 2 1/2 years at Beachbody I created landing pages and worked on exciting new features.
+         <div className='left-about-text'>
+         Elaine began her programming career in her senior year at Cornell University.  
+         Her first job out of college was at Computer Sciences Corporation (CSC) as a computer analyst.  
+         After a few years, she left the industry to try my hand at Wall Street, but eventually found her way back to her first love and passion.  
+         To get up-to-date quickly on the modern technology stack in Los Angeles, she invested in obtaining a technical foundation.  
+         Elaine took an immersive full-time web development course at General Assembly.  
+         During that time Ruby on Rails and AngularJS were quite popular and hence she learned those languages.
+         After graduating from the course she received a job offer at Beachbody LLC in Santa Monica. 
+         During her 2 1/2 years at Beachbody she created landing pages and worked on exciting new features as a full-stack developer.
          </div>
          <div className='right-about-text'>  
-         I wanted to expand my programming skills by exploring Javascript animations and creating more unique, innovative web applications. 
-         I began my career in the ad tech space at RED Interactive Agency, part of the EGM (Endeavour) family.  
-         I have been at RED now for 2 years and created a multitude of web applications for our clients ranging from Nike, Hulu, Netflix, Disney, and Paramount.  
-         I have also created responsive email templates and websites.  
-         As always in my desire to keep up-to-date with modern technology, I have been using ReactJS in production for the past 2 years.  
-         I was also able to explore using a lower K weight version of React, called Preact.  The best way to continue growing and to solidify knowledge is to teach.  
-         I was a part-time teaching assistant at UCLA for their evening programming course. 
-         I enjoy learning and love creating new web applications that are visually stimulation and innovative.
+         Elaine wanted to expand her programming skills by exploring Javascript animations and creating more unique, innovative web applications. 
+         She joined the ad tech space at RED Interactive Agency, part of the EGM (Endeavour) family.  
+         At RED now for 2 years, Elaine has created a multitude of web applications for RED's clients ranging from Nike, Hulu, Netflix, Disney, and Paramount.  
+         She has also created responsive email templates and websites.  
+         Elaine has been using ReactJS in production for the past 2 years.  
+         She was a part-time teaching assistant at UCLA for their evening programming course. 
+         Elaine enjoys learning and loves creating new web applications that are visually stimulating and innovative.
          </div>
        </div>
        <div id='about-container' style={{display: 'none'}}>
