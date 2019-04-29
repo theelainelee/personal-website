@@ -10,6 +10,8 @@ import Button from './components/Button'
 import ThreeScene from './components/ThreeScene'
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Parallax } from 'react-scroll-parallax';
+import classNames from 'classnames'
+// var classNames = require('classnames');
 
 // import ReactDOM from 'react-dom';
 // import Media from 'react-media';
@@ -111,6 +113,13 @@ class App extends Component {
         document.documentElement.style.overflow = 'scroll';
         document.body.scroll = "yes";
   }
+
+  showSectionOverlay = () =>{
+    console.log('Section clicked show overlay')
+    this.setState=({
+        addClass: true
+    })
+  }
    
     
 
@@ -154,7 +163,10 @@ class App extends Component {
        
      <div id='portfolio-flex-container' className='anim' > 
 
-      <section className='work-1'>
+      <section className='work-1' className={classNames(
+            this.state.addClass ? "overlay" : "work-1" 
+          )}
+          onClick={e => this.showSectionOverlay(e)}>
       {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
         <h1>Production Website</h1>
