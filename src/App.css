@@ -352,14 +352,14 @@ a:hover{
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 1s;
+  animation-duration: 6s;
   position: absolute;
-  top: 0;
+  /*top: 0;*/
   bottom: 0;
-  left: 0;
-  right: 0;
+  /*left: 0;
+  right: 0;*/
   height: 100%;
-  width: 50%;
+  width: 100%;
   background-color: black;
   white-space: pre-wrap;
   font-size: 10px;
@@ -369,12 +369,12 @@ a:hover{
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
-    width: 0;
+   
   }
   
   100% {
     opacity: 1;
-    width: 50%;
+    
   }
 }
 
