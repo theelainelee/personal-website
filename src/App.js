@@ -317,7 +317,7 @@ class App extends Component {
          She has also created responsive email templates and websites.  
          Elaine has been using ReactJS in production for the past 2 years.  
          She was a part-time teaching assistant at UCLA for their evening programming course. 
-         Elaine enjoys learning and loves creating new web applications that are visually stimulating and innovative.
+         Elaine loves working with ReactJS, NodeJS, Redux to creating dynamic web applications that are visually stimulating and innovative.
          </div>
        </div>
        <div id='about-container' style={{display: 'none'}}>
