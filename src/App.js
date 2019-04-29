@@ -301,17 +301,15 @@ class App extends Component {
       <img src={myPhoto}/>
       <h1>ABOUT</h1>
          <div className='left-about-text'>
-         Elaine began her programming career in her senior year at Cornell University.  
-         Her first job out of college was at Computer Sciences Corporation (CSC) as a computer analyst.  
+         Elaine began her programming career at Cornell University and upon graduating, went on to work for Computer Sciences Corporation (CSC) as a computer analyst.  
          After a few years, she left the industry to work on Wall Street, but eventually found her way back to her first love and passion.  
-         To get up-to-date quickly on the modern technology stack in Los Angeles, she invested in obtaining a technical foundation.  
-         Elaine took an immersive full-time web development course at General Assembly.  
-         During that time Ruby on Rails and AngularJS were quite popular and hence she learned those languages.
+         To get up-to-date quickly on the modern technology stack in Los Angeles, she invested in obtaining a technical foundation through an immersive full-time web development course at General Assembly.  
+         During that time she programmed in Ruby on Rails and AngularJS.
          After graduating from the course she received a job offer at Beachbody LLC in Santa Monica. 
          During her 2 1/2 years at Beachbody she created landing pages and worked on exciting new features as a full-stack developer.
          </div>
          <div className='right-about-text'>  
-         Elaine wanted to expand her programming skills by exploring Javascript animations and creating more unique, innovative web applications. 
+         Elaine expanded her programming skills by exploring Javascript animations and creating more unique, innovative web applications. 
          She joined the ad tech space at RED Interactive Agency, part of the EGM (Endeavour) family.  
          At RED now for 2 years, Elaine has created a multitude of web applications for RED's clients ranging from Nike, Hulu, Netflix, Disney, and Paramount.  
          She has also created responsive email templates and websites.  
