@@ -172,12 +172,12 @@ class App extends Component {
         <h1 style={{color: 'white'}}>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
          
-         <p><a href='https://tech.wearered.com' target='_blank'>Click to view page</a></p>
+         <p><a href='https://tech.wearered.com' target='_blank'>View Demo</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://tech.wearered.com', '_blank')}>
         <h1 style={{color: 'white'}}>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nReactJS, React Router, NodeJS. WebPack'}/>
         
-         <p><a href='https://tech.wearered.com' target='_blank'>Click to view website</a></p>
+         <p><a href='https://tech.wearered.com' target='_blank'>View Demo</a></p>
          </div> }
         </section>
          <section className='work-2'>
@@ -186,89 +186,103 @@ class App extends Component {
         <h1 style={{color: 'white'}}>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
         
-         <p><a href='https://prod.wearered.com' target='_blank'>Click to view page</a></p>
+         <p><a href='https://prod.wearered.com' target='_blank'>View Demo</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://prod.wearered.com', '_blank')}>
         <h1 style={{color: 'white'}}>Production Website</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency'} text={'Technologies used:\nPreactJS, React alias, NodeJS. WebPack, Mobile Responsive, Git'}/>
          
-         <p><a href='https://prod.wearered.com' target='_blank'>Click to view website</a></p>
+         <p><a href='https://prod.wearered.com' target='_blank'>View Demo</a></p>
          </div> }
         </section>
          <section className='work-3'>
            {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
+        <h1 style={{color: 'white'}}>Personal Website</h1>
+          <Portfolio   title={'Built for:\npersonal website'} text={'Technologies used:\nVueJS, Bulma, Font Awesome, API, Axios, HTML5, CSS3, Sass, Mixins, GitHub Pages'}/>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://elaineleeworld.github.io/compare-vue/dist/#/', '_blank')}>
+        <h1 style={{color: 'white'}}>Personal Website</h1>
+         <Portfolio   title={'Built for:\npersonal website'} text={'Technologies used:\nVueJS, Bulma, Font Awesome, API, Axios, HTML5, CSS3, Sass, Mixins, GitHub Pages'}/>
+        
+         <p><a href='https://elaineleeworld.github.io/compare-vue/dist/#/' target='_blank'>View Demo</a></p>
+         </div> }
+    
+        </section> 
+        <section className='work-4'>
+           {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
         <h1 style={{color: 'white'}}>Production Feature</h1>
           <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
-         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>Click to view page</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
         <h1 style={{color: 'white'}}>Production Feature</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
         
-         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>Click to view CodePen</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p>
          </div> }
     
         </section>
-          <section className='work-4'>
+          <section className='work-5'>
            {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} >
         <h1 style={{color: 'white'}}>Production Product Page</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJavascript, jQuery, Sass, Media Queries, Mobile Responsive, Git'}/>
-         <p>Click to view page</p>
+         <p>View Demo</p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} >
         <h1 style={{color: 'white'}}>Production Product Page</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nJS, jQuery, Mobile Responsive, Git, on CodePen and Beachbody website'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/pPjewO' target='_blank'>Click to view CodePen</a></p>
-         <p style={{zIndex: '10000'}}><a href='https://www.beachbody.com/product/fitness_programs/3-week-yoga-retreat-beginners-dvds.do' target='_blank'>Click to view Beachbody page</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/pPjewO' target='_blank'>View Demo</a></p>
+         <p style={{zIndex: '10000'}}><a href='https://www.beachbody.com/product/fitness_programs/3-week-yoga-retreat-beginners-dvds.do' target='_blank'>View at Beachbody</a></p>
          </div> }
 
         </section>
-        <section className='work-5'>
+        <section className='work-6'>
          {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/jBoEyw', '_blank')}>
         <h1 style={{color: 'white'}}>Mobile Alarm Clocke</h1>
          <Portfolio   title={'Built for:\nInterview Project'} text={'Technologies used:\n Vanilla Javascript, HTML5, CSS3, hosted on CodePen'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/jBoEyw' target='_blank'>Click to view page</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/jBoEyw' target='_blank'>View Demo</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/jBoEyw', '_blank')}>
         <h1 style={{color: 'white'}}>Mobile Alarm Clock</h1>
          <Portfolio   title={'Built for:\nInterview Project'} text={'Technologies used:\n Vanilla Javascript, HTML5, CSS3, hosted on CodePen'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/jBoEyw' target='_blank'>Click to view CodePen</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/jBoEyw' target='_blank'>View Demo</a></p>
          </div> }
          
         </section>
-         <section className='work-6'>
+         <section className='work-7'>
           {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/RVRGrO', '_blank')}>
         <h1 style={{color: 'white'}} >Production Feature</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>Click to view CodePen</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>View Demo</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/RVRGrO', '_blank')}>
         <h1 style={{color: 'white'}}>Production Feature</h1>
          <Portfolio   title={'Built for:\nBeachbody LLC'} text={'Technologies used:\nHTML5, CSS3, Sass, Media Queries, Mobile Responsive, Git'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>Click to view CodePen</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/RVRGrO' target='_blank'>View Demo</a></p>
          </div> }
         
         </section>  
-        <section className='work-7'>
+        <section className='work-8'>
           {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qryjGx', '_blank')}>
         <h1 style={{color: 'white'}}>Sticky Notes</h1>
          <Portfolio   title={'Built for:\nInterview Question'} text={'Technologies used:\nJavascript, jQuery, Sass'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/qryjGx' target='_blank'>Click to view CodePen</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qryjGx' target='_blank'>View Demo</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qryjGx', '_blank')}>
         <h1 style={{color: 'white'}}>Sticky Notes</h1>
          <Portfolio   title={'Built for:\nInterview Question'} text={'Technologies used:\nJavascript, jQuery, HTML5, CSS3'}/>
          
-         <p><a href='https://codepen.io/elaineleeworld/pen/qryjGx' target='_blank'>Click to view CodePen</a></p>
+         <p><a href='https://codepen.io/elaineleeworld/pen/qryjGx' target='_blank'>View Demo</a></p>
          </div> }
         
         </section>  
-        <section className='work-8'>
+        <section className='work-9'>
          {isMobile ? 
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('http://portfolio.ff0000.com/ua_willtrips_2018/', '_blank')}>
         <h1 style={{color: 'white'}}>UnderArmour Case Study</h1>
@@ -279,7 +293,7 @@ class App extends Component {
         <h1 style={{color: 'white'}}>UnderArmour Case Study</h1>
          <Portfolio   title={'Built for:\nRED Interactive Agency for UA'} text={'Technologies used:\nJS, CSS3, Mobile Responsive, Media Queries'}/>
         
-         <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>Click to view website</a></p>
+         <p><a href='http://portfolio.ff0000.com/ua_willtrips_2018/' target='_blank'>View Demo</a></p>
          </div> }
         </section> 
         
