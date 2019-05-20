@@ -199,7 +199,7 @@ class App extends Component {
         <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://codepen.io/elaineleeworld/pen/qmdbGm', '_blank')}>
         <h1 style={{color: 'white'}}>Personal Website</h1>
           <Portfolio   title={'Built for:\npersonal website'} text={'Technologies used:\nVueJS, Bulma, Font Awesome, API, Axios, HTML5, CSS3, Sass, Mixins, GitHub Pages'}/>
-         <p><a href='https://codepen.io/elaineleeworld/pen/qmdbGm' target='_blank'>View Demo</a></p>
+         <p><a href='https://elaineleeworld.github.io/compare-vue/dist/#/' target='_blank'>View Demo</a></p>
          </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://elaineleeworld.github.io/compare-vue/dist/#/', '_blank')}>
         <h1 style={{color: 'white'}}>Personal Website</h1>
          <Portfolio   title={'Built for:\npersonal website'} text={'Technologies used:\nVueJS, Bulma, Font Awesome, API, Axios, HTML5, CSS3, Sass, Mixins, GitHub Pages'}/>
