@@ -164,7 +164,7 @@ class App extends Component {
      <div id='portfolio-flex-container' className='anim' > 
 
       <section className='work-0' className={classNames(
-            this.state.addClass ? "overlay" : "work-1" 
+            this.state.addClass ? "overlay" : "work-0" 
           )}
           onClick={e => this.showSectionOverlay(e)}>
       {isMobile ? 
