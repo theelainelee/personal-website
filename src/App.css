@@ -1,9 +1,7 @@
-
-
 body {
   /*background: url("assets/electromagnetic_spectrum.jpg") no-repeat center center fixed;*/
-  background-color:black;
-  background-size:cover;
+  background-color: black;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,52 +10,48 @@ body {
   margin: 0;
   padding: 0;
   /*overflow-y: hidden;*/
- 
 }
-h1, p{
-  color: #18CAE6;
+h1,
+p {
+  color: #18cae6;
 }
 
 *:focus {
-    outline: 0;
+  outline: 0;
 }
-.name-title{
+.name-title {
   width: 50vw;
-  
 }
-.button-container{
+.button-container {
   display: inline-block;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:center
-  ;
+  text-align: center;
   justify-content: center;
   z-index: 1000;
-  overflow:hidden;
-
+  overflow: hidden;
 }
-.button-styles{
+.button-styles {
   cursor: pointer;
   display: inline-block;
   margin-bottom: auto;
-  position:relative;
+  position: relative;
   border-radius: 10px;
   margin-top: 560px;
   width: 8rem;
   height: 2rem;
-  background: #18CAE6;
+  background: #18cae6;
   color: white;
   border: 2px solid white;
-
 }
 
-.anim{
+.anim {
   animation: anim 2s ease-out 0s 1;
 }
 
-@keyframes anim{
+@keyframes anim {
   0% {
     transform: translateY(100%);
   }
@@ -66,21 +60,17 @@ h1, p{
   }
 }
 
-
-
-#portfolio-flex-container{
-  display:flex;
+#portfolio-flex-container {
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding: 150px 50px 50px 50px;
-  display:none;
-
-  
+  display: none;
 }
 
 .hamburger-menu {
   z-index: 1000;
-  float:right;
+  float: right;
   padding: 35px 40px;
   display: inline-block;
   cursor: pointer;
@@ -91,116 +81,116 @@ h1, p{
   background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; }
+  overflow: visible;
+}
 
 .hamburger-box {
   z-index: 1000;
   width: 40px;
   height: 24px;
   display: inline-block;
-  position: relative; 
+  position: relative;
   pointer-events: none;
-
 }
 
-
-
 .hamburger-inner {
-
   z-index: 1000;
   pointer-events: none;
   display: block;
   top: 50%;
-  margin-top: -2px; 
+  margin-top: -2px;
 }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 30px;
-    height: 4px;
-    background-color: #18CAE6;;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease; 
-  }
-  
-  .hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block; 
-  }
-  .hamburger-inner::before {
-    top: -10px; 
-  }
-  .hamburger-inner::after {
-    bottom: -10px; 
-  }
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 30px;
+  height: 4px;
+  background-color: #18cae6;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
 
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
 
 .hamburger--3dxy .hamburger-box {
   perspective: 80px;
 }
 
 .hamburger--3dxy .hamburger-inner {
-  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-.hamburger--3dxy .hamburger-inner::before, .hamburger--3dxy .hamburger-inner::after {
-    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); 
-  
-  }
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.hamburger--3dxy .hamburger-inner::before,
+.hamburger--3dxy .hamburger-inner::after {
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 
 .hamburger--3dxy.is-active .hamburger-inner {
   background-color: transparent;
-  transform: rotateX(180deg) rotateY(180deg); }
-  .hamburger--3dxy.is-active .hamburger-inner::before {
-    transform: translate3d(0, 10px, 0) rotate(45deg); }
-  .hamburger--3dxy.is-active .hamburger-inner::after {
-    transform: translate3d(0, -10px, 0) rotate(-45deg); 
-  }
+  transform: rotateX(180deg) rotateY(180deg);
+}
+.hamburger--3dxy.is-active .hamburger-inner::before {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger--3dxy.is-active .hamburger-inner::after {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+}
 
-#portfolio-video-container{
+#portfolio-video-container {
   display: flex;
   flex-flow: row wrap;
-  padding:  20px 300px;
-  
+  padding: 20px 300px;
 }
 
-#about-container{
-  padding:  100px 250px 0px 250px;
+#about-container {
+  padding: 100px 250px 0px 250px;
   color: white;
   line-height: 1.3;
-  overflow:hidden;
-  background-color:black;
-  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
 }
-.left-about-text{
-  float:left;
+.left-about-text {
+  float: left;
   width: 47%;
-  text-align:justify;
+  text-align: justify;
   padding: 5px;
 }
-.right-about-text{
-  float:right;
+.right-about-text {
+  float: right;
   width: 47%;
-  text-align:justify;
+  text-align: justify;
   padding: 5px;
 }
 
-.text-portfolio-video{
- float: left;
- width: 50%;
- color:white;
- padding-top: 60px;
- text-align:left;
- line-height: 1.5;
- text-align:justify;
- font-family: 'Roboto', sans-serif;
+.text-portfolio-video {
+  float: left;
+  width: 50%;
+  color: white;
+  padding-top: 60px;
+  text-align: left;
+  line-height: 1.5;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
 }
- 
+
 .react-player {
   width: 50%;
   margin: 0 auto;
   z-index: -10;
 }
-
 
 .nav-menu {
   z-index: -10;
@@ -212,110 +202,108 @@ h1, p{
   height: 100vh;
   list-style-type: none;
   display: none;
-  text-align:center;
+  text-align: center;
   line-height: 2;
-
- 
 }
 
 .nav-menu.is-active {
   display: block;
 }
 
-li, #email-link {
-  cursor:pointer;
-  color: #18CAE6;
+li,
+#email-link {
+  cursor: pointer;
+  color: #18cae6;
 }
-li:hover{
-  color:white;
+li:hover {
+  color: white;
 }
 #email-link:hover {
-  color:white;
+  color: white;
 }
 
-.header__info__container{
-  
+.header__info__container {
   padding: 10px 40px;
-  background: rgba(0,0,0, 1);
-  line-height: 0.5
+  background: rgba(0, 0, 0, 1);
+  line-height: 0.5;
 }
 
-header{
-  position:fixed;
+header {
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: "Open Sans", sans-serif;
 }
 section {
-  background-color: rgba(211,211,211,0.1);
+  background-color: rgba(211, 211, 211, 0.1);
   border-radius: 10px;
   border: 5px solid black;
   margin: 10px;
   width: 300px;
   height: 400px;
-  position:relative;
- 
-
+  position: relative;
 }
 
 canvas {
-    display:block;
-    background: transparent;
-    position: fixed;
-    z-index: -100;
-    width: 100%;
+  display: block;
+  background: transparent;
+  position: fixed;
+  z-index: -100;
+  width: 100%;
 }
 
 .particles-js {
   position: absolute;
-    width: 100%;
-    height: 100vh;
-    padding-top: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    opacity: 0.7;
-    z-index: -100;
-
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 0.7;
+  z-index: -100;
 }
 
-.work-1{
-  background: url('assets/red-tech.jpg') no-repeat center center;
+.work-0 {
+  background: url("assets/spacex.png") no-repeat center center;
   background-size: 100% 100%;
 }
-.work-2{
-  background: url('assets/prod.png') no-repeat center center;
+.work-1 {
+  background: url("assets/red-tech.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+.work-2 {
+  background: url("assets/prod.png") no-repeat center center;
   background-size: cover;
 }
-.work-3{
-  background: url('assets/VueJS.png') no-repeat center center;
+.work-3 {
+  background: url("assets/VueJS.png") no-repeat center center;
   background-size: 120% 100%;
 }
-.work-4{
-  background: url('assets/P90x.png') no-repeat center center;
+.work-4 {
+  background: url("assets/P90x.png") no-repeat center center;
   background-size: 120% 100%;
 }
-.work-5{
-  background: url('assets/yoga.jpg') no-repeat center center;
+.work-5 {
+  background: url("assets/yoga.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
-.work-6{
-  background: url('assets/clock.jpg') no-repeat center center;
-   background-size: 100% 100%;
+.work-6 {
+  background: url("assets/clock.jpg") no-repeat center center;
+  background-size: 100% 100%;
 }
-.work-7{
-  background: url('assets/beachbody_overlay.png') no-repeat center center;
-   background-size: 100% 100%;
+.work-7 {
+  background: url("assets/beachbody_overlay.png") no-repeat center center;
+  background-size: 100% 100%;
 }
-.work-8{
-  background: url('assets/stickyNotes.png') no-repeat center center;
-   background-size: cover;
+.work-8 {
+  background: url("assets/stickyNotes.png") no-repeat center center;
+  background-size: cover;
 }
-.work-9{
-  background: url('assets/UA.png') no-repeat center center;
-   background-size: cover;
+.work-9 {
+  background: url("assets/UA.png") no-repeat center center;
+  background-size: cover;
 }
 
 .overlay {
@@ -327,19 +315,18 @@ canvas {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: black;
   white-space: pre-wrap;
-  font-family: 'Roboto', sans-serif;
-  color: #18CAE6;
- 
+  font-family: "Roboto", sans-serif;
+  color: #18cae6;
 }
-section:hover .overlay{
-  cursor:pointer;
+section:hover .overlay {
+  cursor: pointer;
   opacity: 1;
   z-index: 8;
-  text-align:center;
-  color: #18CAE6;
+  text-align: center;
+  color: #18cae6;
 }
 
 a {
@@ -347,8 +334,8 @@ a {
   color: white;
   text-decoration: none;
 }
-a:hover{
-  color: #18CAE6;
+a:hover {
+  color: #18cae6;
 }
 
 .fade-in {
@@ -367,82 +354,79 @@ a:hover{
   background-color: black;
   white-space: pre-wrap;
   font-size: 10px;
-
 }
 
 @keyframes fadeInOpacity {
   0% {
     opacity: 0;
-   
   }
-  
+
   100% {
     opacity: 1;
-    
   }
 }
 
-@media only screen and (max-width: 1400px){
-  #portfolio-video-container, #about-container{
+@media only screen and (max-width: 1400px) {
+  #portfolio-video-container,
+  #about-container {
     padding: 100px;
   }
-   .text-portfolio-video{
+  .text-portfolio-video {
     width: 100%;
   }
- 
 }
 
-@media only screen and (max-width: 1000px){
-   .left-about-text, .right-about-text{
+@media only screen and (max-width: 1000px) {
+  .left-about-text,
+  .right-about-text {
     width: 100%;
-    clear:both;
+    clear: both;
     padding: 10px 0;
   }
 }
-@media only screen and (max-width: 600px){
-  .job-title{
+@media only screen and (max-width: 600px) {
+  .job-title {
     font-size: 12px;
   }
-  #portfolio-video-container, #about-container{
+  #portfolio-video-container,
+  #about-container {
     padding: 120px 40px 20px 40px;
   }
-  .button-styles{
+  .button-styles {
     margin-top: 460px;
   }
-   section {
-     width: 300px;
-      height: 400px;
+  section {
+    width: 300px;
+    height: 400px;
   }
 }
 
 @media only screen and (device-width: 768px) and (orientation: landscape) {
   /* rules for iPad in landscape orientation */
- .button-styles{
+  .button-styles {
     margin-top: 860px;
   }
-   section {
-     width: 300px;
-      height: 400px;
+  section {
+    width: 300px;
+    height: 400px;
   }
 }
 
 @media only screen and (device-width: 1024px) and (orientation: portrait) {
   /* rules for iPad in portrait orientation */
-  .button-styles{
+  .button-styles {
     margin-top: 860px;
   }
-  
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* iPhone, Android rules here */
-  .job-title{
-    font-size: 12px !important
+  .job-title {
+    font-size: 12px !important;
   }
 
   section {
-     width: 300px;
-      height: 400px;
+    width: 300px;
+    height: 400px;
   }
-
 }

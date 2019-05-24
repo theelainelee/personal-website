@@ -163,6 +163,23 @@ class App extends Component {
        
      <div id='portfolio-flex-container' className='anim' > 
 
+      <section className='work-0' className={classNames(
+            this.state.addClass ? "overlay" : "work-1" 
+          )}
+          onClick={e => this.showSectionOverlay(e)}>
+      {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://shrouded-citadel-11065.herokuapp.com/', '_blank')}>
+        <h1 style={{color: 'white'}}>Heroku App</h1>
+         <Portfolio   title={'Built for:\n side project'} text={'Technologies used:\nReactJS, Apollo, GraphQL, React Router, NodeJS, MomentJS, Heroku Deploy, Bootstrap 4'}/>
+         
+         <p><a href='https://shrouded-citadel-11065.herokuapp.com/' target='_blank'>View Demo</a></p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://shrouded-citadel-11065.herokuapp.com/', '_blank')}>
+        <h1 style={{color: 'white'}}>Heroku App</h1>
+         <Portfolio   title={'Built for:\nside project'} text={'Technologies used:\nReactJS, Apollo, GraphQL, React Router, NodeJS, MomentJS, Heroku Deploy, Bootstrap 4'}/>
+        
+         <p><a href='https://shrouded-citadel-11065.herokuapp.com/' target='_blank'>View Demo</a></p>
+         </div> }
+        </section>
       <section className='work-1' className={classNames(
             this.state.addClass ? "overlay" : "work-1" 
           )}
