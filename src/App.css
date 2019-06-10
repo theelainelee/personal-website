@@ -265,6 +265,10 @@ canvas {
   z-index: -100;
 }
 
+.work-00 {
+  background: url("assets/quiz.png") no-repeat center center;
+  background-size: 100% 100%;
+}
 .work-0 {
   background: url("assets/spacex.png") no-repeat center center;
   background-size: 100% 100%;

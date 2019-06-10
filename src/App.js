@@ -163,6 +163,23 @@ class App extends Component {
        
      <div id='portfolio-flex-container' className='anim' > 
 
+      <section className='work-00' className={classNames(
+            this.state.addClass ? "overlay" : "work-00" 
+          )}
+          onClick={e => this.showSectionOverlay(e)}>
+      {isMobile ? 
+        <div><div className='fade-in'  style={{textAlign: 'center'}} onClick={() => window.open('https://elaineleeworld.github.io/quiz/')}>
+        <h1 style={{color: 'white'}}>Vue App</h1>
+         <Portfolio   title={'Built for:\n side project'} text={'Technologies used:\nVueJS, Bootstrap Vue, VueCLI, Lodash'}/>
+         
+         <p><a href='https://elaineleeworld.github.io/quiz/' target='_blank'>View Demo</a></p>
+         </div></div> : <div className='overlay'  style={{textAlign: 'center'}} onClick={() => window.open('https://elaineleeworld.github.io/quiz/', '_blank')}>
+        <h1 style={{color: 'white'}}>Heroku App</h1>
+         <Portfolio   title={'Built for:\nside project'} text={'Technologies used:\nVueJS, Bootstrap Vue, VueCLI, Lodash'}/>
+        
+         <p><a href='https://elaineleeworld.github.io/quiz/' target='_blank'>View Demo</a></p>
+         </div> }
+        </section>
       <section className='work-0' className={classNames(
             this.state.addClass ? "overlay" : "work-0" 
           )}
